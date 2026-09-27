@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+node_modules/
+outputs/
+renders/
+*.mp4
+*.mov
+*.wav
+*.mp3
+.DS_Store
+Thumbs.db
