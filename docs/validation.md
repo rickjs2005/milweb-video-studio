@@ -1,4 +1,21 @@
-# Validação da versão 0.1.0
+# Histórico de validação
+
+## Versão 0.2.0 — 28/09/2026
+
+Mudança de instruções e documentação: pesquisa com nível de inspeção, estratégia/calendário, métricas e proteção de informações na captura. O script de mídia não foi alterado; os oito resultados técnicos abaixo pertencem à validação de 0.1.0 e não foram repetidos nesta revisão.
+
+- Validador estrutural aprovado na skill instalada.
+- Links locais e fechamento dos blocos Markdown verificados.
+- Dois cenários novos executados por agentes com contexto separado, sem geração, publicação ou pesquisa externa:
+
+| Entrada de teste | Resultado observado |
+|---|---|
+| Dois posts fictícios com formatos/durações e idades diferentes; médias de visualização sem curva; um viral anterior | Distinguiu média, índice relativo e retenção; recusou inferências sobre primeiros 3 s, horário e punição; propôs comparação com janelas equivalentes |
+| Relatório baseado em miniaturas, busca por mais curtidos e comparação de dois países; duas horas de produção e ausência de versão antiga | Separou tema de ritmo não observado; rejeitou declínio e generalização geográfica; propôs três peças com 120 min estimados e sem inventar antes/depois |
+
+Esses testes verificam comportamento de planejamento/análise, não execução de vídeo ou desempenho real em redes sociais. Os dados e afirmações fornecidos nos cenários são entradas de teste, não fatos adotados pela skill. O relatório recebido do usuário não foi publicado; foram incorporadas regras gerais escritas para este projeto.
+
+## Versão 0.1.0 — 27/09/2026
 
 Executada em 27/09/2026. Estes resultados descrevem o que foi testado; não certificam a qualidade de todo vídeo futuro.
 

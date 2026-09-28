@@ -1,6 +1,6 @@
 ---
 name: milweb-video-studio
-description: "Pesquisar referências e tendências, dirigir, roteirizar, gerar e editar vídeos completos ou executar ajustes pontuais. Usar para Reels, TikTok, LinkedIn, YouTube, Bilibili, vídeos de sites e produtos, cenas no Higgsfield, transições, motion graphics, Remotion, trilha, voz, legendas e revisão audiovisual. Atender também pedidos só de pesquisa, roteiro ou prompts sem iniciar geração. Adaptar duração e linguagem ao briefing e às ferramentas disponíveis."
+description: "Pesquisar referências e tendências, planejar conteúdo e calendários, dirigir, roteirizar, gerar e editar vídeos ou executar ajustes pontuais. Usar para Reels, TikTok, LinkedIn, YouTube, Bilibili, sites e produtos, Higgsfield, transições, motion, Remotion, áudio, legendas, revisão e análise de métricas. Atender também pedidos só de pesquisa, roteiro ou prompts sem iniciar geração. Adaptar duração e linguagem ao briefing e às ferramentas disponíveis."
 ---
 
 # MilWeb Video Studio
@@ -9,7 +9,7 @@ Atuar com critério de direção e edição profissional: justificar decisões p
 
 ## 1. Identificar a entrega e as restrições
 
-Classificar a solicitação: pesquisa, análise de referência, roteiro, prompts, geração, edição pontual ou produção completa. Executar somente o escopo solicitado. Um pedido de plano não autoriza render, gasto ou publicação.
+Classificar a solicitação: pesquisa, análise de referência, estratégia/calendário, análise de resultados, roteiro, prompts, geração, edição pontual ou produção completa. Executar somente o escopo solicitado. Um pedido de plano não autoriza render, gasto ou publicação.
 
 Extrair da conversa: objetivo, público, destino/superfície, duração total e mínima por cena, materiais, identidade, voz/idioma, prazo, orçamento e restrições. Reaproveitar decisões anteriores. Perguntar apenas pelo dado que realmente bloqueia o próximo passo; adotar e declarar hipóteses reversíveis para os demais.
 
@@ -22,6 +22,8 @@ Verificar as capacidades reais: arquivos acessíveis, navegador/captura, busca, 
 | Trabalho | Referência a ler |
 |---|---|
 | Conceito novo, tendências, referências atuais | [research.md](references/research.md) |
+| Ideias, pilares, prioridades e calendário editorial | [content-strategy.md](references/content-strategy.md) |
+| Métricas, retenção, queda de alcance e testes de conteúdo | [performance.md](references/performance.md) |
 | Destino, duração, versões por rede | [platforms.md](references/platforms.md) |
 | Roteiro, ritmo, enquadramento, transição | [direction.md](references/direction.md) |
 | Filmagem, material recebido ou gravação de site | [footage.md](references/footage.md) |
@@ -59,4 +61,4 @@ Não inserir confirmações entre etapas reversíveis já autorizadas. Continuar
 
 ## 5. Registrar aprendizado útil
 
-Após feedback, registrar no projeto: sintoma, causa observada, correção, evidência e escopo. Separar preferência do cliente de limitação técnica. Incorporar uma lição à skill somente quando solicitado; não transformar uma tentativa ruim em proibição geral.
+Após feedback, registrar no projeto: sintoma, causa observada, correção, evidência e escopo. Para resultados publicados, usar performance.md: separar associação de causa e comparar dados equivalentes. Separar preferência do cliente de limitação técnica. Incorporar uma lição à skill somente quando solicitado; não transformar uma tentativa ruim em proibição geral.

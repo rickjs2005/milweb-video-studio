@@ -17,6 +17,8 @@ Para análise, separar observação visual, fala transcrita e som ouvido. Extrai
 5. Se prometer responsividade, capturar e testar o estado móvel real. Recorte vertical de desktop não demonstra funcionamento no celular.
 6. Conferir reprodução e legibilidade antes de montar. Não aceitar hero incompleto ou quadro escuro só porque o arquivo existe.
 
+Antes de capturar código, prompts, chats e navegador, ocultar chaves, tokens, dados de clientes e notificações. Para antes/depois, usar versões reais com direito de exibição e condições comparáveis; identificar redesign conceitual/demo. Não apresentar uma interface genérica inventada como o site antigo de um cliente, nem inferir ganhos comerciais por aparência.
+
 Playwright, gravação manual e ferramenta nativa são opções; respeitar o ambiente. Screenshot animada serve para plano estático, mas não prova interação. Identificar mockup/reconstrução no registro de fontes.
 
 ## Decidir real versus gerado

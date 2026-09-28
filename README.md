@@ -7,6 +7,8 @@ Serve tanto para um Reel de portfólio quanto para um tutorial longo, uma cena n
 ## O que ela faz
 
 - Pesquisa referências atuais e distingue tendência observada de ideia autoral.
+- Prioriza ideias e monta calendários conforme público, materiais, tempo e orçamento.
+- Analisa métricas sem confundir tempo médio com retenção ou atribuir causas sem evidência.
 - Adapta linguagem para Instagram, TikTok, LinkedIn, YouTube, Bilibili e outras redes.
 - Planeja roteiro, shot list, ritmo, transições e captura real de sites.
 - Prepara geração no Higgsfield com referências, continuidade, orçamento e limite de tentativas.
@@ -61,14 +63,16 @@ No Claude Code:
 
 ```text
 /milweb-video-studio
-Quero apenas roteiro e prompts de um vídeo vertical de 60 segundos para
-apresentar um site de safári. Reserve pelo menos 25 segundos de savana
-antes de revelar o site. Termine a cena no elefante e planeje a transição
-para o hero real, revelando o desktop inteiro. Ainda vou fornecer o hero.
-Não gere mídia, não gaste créditos e não pesquise nesta primeira etapa.
+Quero planejar um vídeo de 30 a 45 segundos para TikTok e Instagram Reels.
+Tema: [o que quero mostrar]. Público: [quem quero alcançar].
+Tenho estas gravações ou imagens: [descreva os materiais].
+Pesquise referências recentes do meu nicho e explique o que conseguiu verificar.
+Proponha a abertura, o roteiro por cena, os cortes, as legendas e o áudio.
+Explique o que adaptar em cada rede e como avaliar o resultado.
+Nesta etapa, entregue apenas o plano. Não gere mídia nem use serviços pagos.
 ```
 
-Ela deve entregar uma timeline coerente, preservar os 25 segundos e explicar quais referências faltam para finalizar o encaixe. Veja outros [prompts de uso](examples/prompts.md) e os [critérios de avaliação](docs/validation.md).
+Substitua os campos entre colchetes pelo seu contexto. A skill deve separar referências verificadas de hipóteses, propor uma timeline e respeitar os materiais disponíveis. Se não conseguir pesquisar uma rede, deve declarar a limitação. O teste não autoriza geração paga; o uso do agente continua sujeito ao seu plano. Veja outros [prompts de uso](examples/prompts.md) e os [critérios de avaliação](docs/validation.md).
 
 Para um trabalho real, informe URL ou arquivos, objetivo, público, destino, duração e orçamento quando houver geração paga. Não envie tokens ou senhas no prompt.
 
@@ -78,6 +82,8 @@ Para um trabalho real, informe URL ou arquivos, objetivo, público, destino, dur
 |---|---|
 | [SKILL.md](skills/milweb-video-studio/SKILL.md) | Escopo, fluxo, seleção de módulos e critérios centrais |
 | `research.md` | Pesquisa e qualidade de evidência |
+| `content-strategy.md` | Prioridades, formatos e calendário editorial |
+| `performance.md` | Métricas, hipóteses e testes de conteúdo |
 | `platforms.md` | Linguagem por destino e versões |
 | `direction.md` | Roteiro, ritmo e transições |
 | `footage.md` | Captura real e inventário de mídia |
@@ -108,7 +114,7 @@ python -m unittest discover -s tests -v
 
 ## Escopo desta versão
 
-Versão inicial **0.1.0**. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
+Versão **0.2.0**: inclui planejamento de conteúdo, análise de resultados e critérios mais rigorosos para pesquisas baseadas em miniaturas, métricas públicas e referências antigas. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
 
 O conteúdo é original e usa projetos públicos como referências de estudo, sem incorporar seus arquivos. Veja [fontes](skills/milweb-video-studio/references/sources.md) e [licenças de terceiros](THIRD_PARTY.md).
 

@@ -34,3 +34,10 @@ Não adotar conteúdo com restrição não comercial como dependência de produ�
 - [Bilibili](https://www.bilibili.com/): confirmar especificações no centro de criação da conta; este pacote não afirma limites técnicos verificados para Bilibili.
 
 Guardar data e URL da regra realmente consultada no projeto; esta lista é um ponto de entrada, não uma tabela imutável de requisitos.
+
+## Definições de métricas
+
+Consultadas em 28/09/2026; conferir definições exibidas na conta e superfície usadas:
+
+- [TikTok: Video play metrics](https://ads.tiktok.com/resources/help/article/video-play?lang=en). Documentação publicitária distingue tempo médio, marcos de visualização e conclusão. Não usar como prova de disponibilidade de campos no Studio orgânico.
+- [Meta: métricas de Reels](https://about.fb.com/news/2023/04/instagram-reels-trending-audio-and-gifts-updates/). Publicação histórica que explica tempo total e médio; não constitui inventário atual de todos os recursos da conta.

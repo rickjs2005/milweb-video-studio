@@ -27,8 +27,10 @@ Registrar separadamente a duração de sobreposição e se ela conta para a exig
 
 ## Pesquisa
 
-| Fonte/URL | Autor | Publicado em | Consultado em | Mercado | O que foi observado | Métrica pública | Grau de evidência | Adaptação |
-|---|---|---|---|---|---|---|---|---|
+| Fonte/URL | Autor | Publicado em / incerteza | Consulta e fuso | Idioma / região conhecida | Inspeção e trecho | Fato observado | Métrica e unidade | Evidência | Hipótese de adaptação |
+|---|---|---|---|---|---|---|---|---|---|
+
+Acrescentar termos, filtros, ordenação e cobertura por rede. Separar data de publicação de indexação e proposta criativa de técnica observada.
 
 ## Registro de geração
 
@@ -68,4 +70,23 @@ Causa observada (ou hipótese identificada):
 Correção:
 Evidência de melhoria:
 Aplicabilidade / exceções:
+```
+
+## Prioridades e calendário
+
+| Data / fuso | Prioridade | Objetivo e público | Formato / hipótese | Fonte e inspeção | Material / dependências | Tempo estimado / custo adicional | Adaptação por rede | Métrica principal |
+|---|---|---|---|---|---|---|---|---|
+
+## Registro de experimento
+
+```text
+Hipótese / variável principal:
+Posts ou versões comparados / demais diferenças:
+Plataforma / superfície / orgânico ou pago:
+Publicação / coleta / idade do post / fuso:
+Métrica exata / unidade / denominador / origem:
+Referência histórica: período, quantidade, mediana e faixa:
+Critério de sucesso definido antes:
+Observação / hipóteses alternativas / dados ausentes:
+Decisão e próximo teste:
 ```

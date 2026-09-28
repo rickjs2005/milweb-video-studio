@@ -11,6 +11,36 @@ Meu público é [público] e quero [objetivo]. Traga links, datas, o mecanismo v
 de cada referência e uma proposta adaptada. Não gere nem publique nada ainda.
 ```
 
+## Plano de edição para TikTok e Reels
+
+```text
+/milweb-video-studio
+Quero planejar um vídeo de 30 a 45 segundos sobre [tema] para [público].
+Tenho [gravações/imagens]. Pesquise referências atuais, indicando o que
+conseguiu assistir e verificar. Proponha abertura, cenas, cortes, texto e áudio,
+com adaptações para TikTok e Reels. Nesta etapa, só planejamento, sem geração paga.
+```
+
+## Semana com pouco tempo de produção
+
+```text
+/milweb-video-studio
+Tenho [tempo disponível] e estes materiais: [lista]. Quero [objetivo] com
+conteúdo para [público/redes]. Selecione até três prioridades, justificando
+evidência, esforço e custo adicional. Monte uma agenda viável e diga o que
+medir. Não publique nem agende nada.
+```
+
+## Análise de resultados
+
+```text
+/milweb-video-studio
+Analise estes prints/exportações de [plataforma]. Separe dados observados
+de hipóteses e confira se as métricas e idades dos posts são comparáveis.
+Não tenho certeza do motivo da queda. Proponha um teste pequeno para a
+próxima edição e diga quais dados faltam, sem presumir punição da conta.
+```
+
 ## Savana e revelação do site
 
 ```text
