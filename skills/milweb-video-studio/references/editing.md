@@ -39,3 +39,7 @@ Conferir níveis, balanço, exposição, consistência e transformação de cor 
 ## Entrega editável
 
 Organizar fontes autorizadas, referências relativas, código/timeline, fontes e instruções mínimas de reprodução. Excluir caches, credenciais e mídia sem direito de redistribuição. Informar dependências externas e versões; um MP4 não é um projeto editável.
+
+## Composição avançada
+
+Para recorte de pessoa, troca de fundo, cenários construídos em etapas, objetos 3D ou site montado em camadas, ler [compositing-vfx.md](compositing-vfx.md). Separar assets, máscaras, oclusão e movimentos antes da implementação. Executar prova curta do efeito de maior risco quando houver autorização de produção; preservar a fase de planejamento quando somente ela for solicitada.

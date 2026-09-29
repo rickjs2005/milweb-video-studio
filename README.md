@@ -14,6 +14,8 @@ Serve tanto para um Reel de portfólio quanto para um tutorial longo, uma cena n
 - Adapta linguagem para Instagram, TikTok, LinkedIn, Pinterest, YouTube, Bilibili e outras redes.
 - Planeja roteiro, shot list, ritmo, transições e captura real de sites.
 - Prepara geração no Higgsfield com referências, continuidade, orçamento e limite de tentativas.
+- Planeja recorte de apresentador, cenários virtuais em camadas, animação 3D e sites sendo montados na tela.
+- Define uma prova curta do efeito de maior risco antes de renderizar uma produção complexa completa.
 - Orienta montagem com Remotion, FFmpeg, Higgsedit ou o editor do projeto.
 - Trabalha voz, trilha, SFX, legendas e revisão audiovisual.
 - Preserva duração e escolhas do briefing, inclusive cenas contemplativas longas.
@@ -108,6 +110,7 @@ Para um trabalho real, informe URL ou arquivos, objetivo, público, destino, dur
 | `direction.md` | Roteiro, ritmo e transições |
 | `footage.md` | Captura real e inventário de mídia |
 | `higgsfield.md` | Geração, continuidade e orçamento |
+| `compositing-vfx.md` | Recorte, camadas, cenários virtuais, 3D, construção de sites e prova curta |
 | `editing.md` | Montagem, motion e motores |
 | `audio.md` | Voz, música, efeitos e legendas |
 | `quality.md` | Revisão técnica, perceptiva e editorial |
@@ -134,7 +137,7 @@ python -m unittest discover -s tests -v
 
 ## Escopo desta versão
 
-Versão **0.3.0**: adiciona briefing progressivo e especialidades para LinkedIn, Pinterest, Instagram e TikTok, com pesquisa por destino e suporte a posts, Pins e carrosséis. Preserva planejamento de conteúdo, análise de resultados e critérios de evidência da versão anterior. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
+Versão **0.4.0**: adiciona um fluxo de composição avançada para recorte, cenários virtuais, animação 2.5D/3D e sites montados em camadas, com prova curta, critérios de revisão e planejamento de render em máquinas limitadas. Preserva o briefing por rede, posts, Pins, carrosséis e produção de vídeo. São procedimentos e critérios de execução; não há modelo de segmentação ou cena 3D pronta incluídos. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
 
 O conteúdo é original e usa projetos públicos como referências de estudo, sem incorporar seus arquivos. Veja [fontes](skills/milweb-video-studio/references/sources.md) e [licenças de terceiros](THIRD_PARTY.md).
 

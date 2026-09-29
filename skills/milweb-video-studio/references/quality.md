@@ -38,3 +38,11 @@ Marcar cada item como `verificado`, `falhou`, `não aplicável` ou `não verific
 Se reprodução/escuta estiver indisponível, entregar o arquivo como **versão para revisão**, com as verificações técnicas realizadas e a pendência explícita. Não alegar “assisti”, “ouvi” ou “aprovado integralmente” sem tê-lo feito. Não bloquear indefinidamente uma entrega útil pela ausência de ferramenta perceptiva.
 
 Fornecer somente links/arquivos existentes. Identificar duração, formato, mudanças e limitação material. Incluir fontes/projeto quando solicitado e permitido. Não chamar um vídeo de publicado quando ele só foi exportado.
+
+## Recorte, 3D e interfaces em camadas
+
+- Conferir cabelo, mãos, óculos, microfone e cabos em movimento; revisar halos, cintilação e perda de partes sobre fundos claros/escuros.
+- Verificar ordem de oclusão, contato, perspectiva, iluminação e estabilidade entre estados do cenário. Testar a composição além de um único frame favorável.
+- Em UI reconstruída, comparar o estado final com captura real: fontes, cores, layout e conteúdo. Não chamar uma animação ilustrativa de demonstração funcional.
+- Em render segmentado, conferir frames e áudio das fronteiras. Em 3D por código, verificar determinismo e assets carregados.
+- Registrar separadamente: plano verificado, amostra renderizada, reprodução/escuta verificadas e produção completa. Uma prova curta não certifica todo o vídeo.

@@ -125,3 +125,24 @@ Use um briefing comum e adapte formato, texto, composição e CTA para cada rede
 O Instagram deve construir confiança; o Pinterest será uma vitrine visual.
 Entregue apenas as propostas, sem postar.
 ```
+
+## Apresentador e cenário em camadas — somente plano
+
+```text
+/milweb-video-studio
+Quero planejar um Reel em que o fundo desaparece e meu site surge atrás de mim.
+Tenho [gravação original] e [URL/capturas do site]. Use [referência] para analisar
+os efeitos, distinguindo o que foi observado de hipóteses sobre as ferramentas.
+Defina recorte, camadas, oclusão e uma prova curta. Não gere nem renderize ainda.
+```
+
+## Site sendo construído — teste executável
+
+```text
+/milweb-video-studio
+Produza apenas um teste de 12 segundos, vertical, sem apresentador nem narração,
+com este site [URL/arquivos] surgindo em camadas e terminando na captura real.
+Use material existente e ferramentas locais. Não altere o site em produção,
+não use serviços pagos e não publique. Meça o render e entregue o preview
+com o que conseguiu verificar e as limitações de reprodução/áudio.
+```

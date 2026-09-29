@@ -90,3 +90,10 @@ Critério de sucesso definido antes:
 Observação / hipóteses alternativas / dados ausentes:
 Decisão e próximo teste:
 ```
+
+## Plano de composição por efeito
+
+| Trecho / frames | Efeito observado ou proposto | Fonte / camadas | Máscara e alpha | Ordem de oclusão | Câmera / movimento | Motor e versão | Prova curta / risco | Verificação |
+|---|---|---|---|---|---|---|---|---|
+
+Registrar fonte original, proxy e saída separadamente. Para uma referência, distinguir o que foi observado da hipótese de implementação. Não exigir este registro para cortes simples.

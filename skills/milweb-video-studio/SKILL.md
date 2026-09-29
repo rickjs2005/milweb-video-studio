@@ -1,6 +1,6 @@
 ---
 name: milweb-video-studio
-description: "Pesquisar referências e tendências, planejar conteúdo e calendários, dirigir, roteirizar, gerar e editar vídeos ou executar ajustes pontuais. Conduzir briefing progressivo para LinkedIn, Pinterest, Instagram e TikTok, sem repetir respostas. Usar para posts, Pins, carrosséis, Reels, TikTok, LinkedIn, YouTube, Bilibili, sites e produtos, Higgsfield, transições, motion, Remotion, áudio, legendas, revisão e análise de métricas. Atender também pedidos só de pesquisa, roteiro ou prompts sem iniciar geração. Adaptar duração e linguagem ao briefing e às ferramentas disponíveis."
+description: "Pesquisar referências e tendências, planejar conteúdo e calendários, dirigir, roteirizar, gerar e editar vídeos ou executar ajustes pontuais. Conduzir briefing progressivo para LinkedIn, Pinterest, Instagram e TikTok, sem repetir respostas. Usar para posts, Pins, carrosséis, Reels, TikTok, LinkedIn, YouTube, Bilibili, sites e produtos, Higgsfield, transições, motion, composição em camadas, recorte de apresentador, cenários virtuais, 3D, construção visual de sites, Remotion, áudio, legendas, revisão e análise de métricas. Atender também pedidos só de pesquisa, roteiro ou prompts sem iniciar geração. Adaptar duração e linguagem ao briefing e às ferramentas disponíveis."
 ---
 
 # MilWeb Video Studio
@@ -38,6 +38,7 @@ Verificar as capacidades reais: arquivos acessíveis, navegador/captura, busca, 
 | Roteiro, ritmo, enquadramento, transição | [direction.md](references/direction.md) |
 | Filmagem, material recebido ou gravação de site | [footage.md](references/footage.md) |
 | Geração de cenas, imagens ou movimento no Higgsfield | [higgsfield.md](references/higgsfield.md) |
+| Recorte, troca de cenário, animação 2.5D/3D e site montado em camadas | [compositing-vfx.md](references/compositing-vfx.md) |
 | Montagem, Remotion, FFmpeg, CapCut ou outro editor | [editing.md](references/editing.md) |
 | Voz, trilha, SFX, mixagem e legendas | [audio.md](references/audio.md) |
 | Render, revisão e entrega de vídeo | [quality.md](references/quality.md) |
@@ -53,7 +54,7 @@ Para texto, Pin estático ou carrossel, entregar conteúdo e direção visual co
 1. **Preparar:** inventariar materiais, medir arquivos e registrar restrições. Em produção nova, pesquisar conforme research.md; respeitar proibição explícita de pesquisa. Selecionar plataforma e linguagem.
 2. **Dirigir:** definir promessa, progressão visual e conclusão; montar shot list com tempos, fontes, movimento, texto e áudio. Escolher uma proposta principal fundamentada.
 3. **Produzir materiais:** capturar produto real para demonstrar funcionalidades; gerar cenas quando fizerem sentido e houver acesso/orçamento. Manter fontes e parâmetros rastreáveis. Não substituir prova de produto por interface fictícia.
-4. **Montar:** fazer primeiro o corte com conteúdo e som; adicionar motion e transições que melhorem a compreensão. Testar o trecho de maior risco antes do render longo. Preservar escolhas aprovadas.
+4. **Montar:** fazer primeiro o corte com conteúdo e som; adicionar motion e transições que melhorem a compreensão. Para composição complexa, aplicar compositing-vfx.md: decompor o efeito em camadas, conferir materiais/capacidade e testar o trecho de maior risco antes do render longo. Só fazer o teste quando a produção estiver autorizada; em pedido de plano, especificar o teste sem renderizar. Preservar escolhas aprovadas.
 5. **Revisar:** medir duração e requisitos; inspecionar o vídeo reproduzido e ouvir a mixagem quando possível. Separar verificações realizadas de pendências; consultar quality.md.
 6. **Entregar:** fornecer arquivo/link real, duração, formato, versões solicitadas e limitações materiais. Incluir projeto editável ou instruções reproduzíveis quando fizer parte do pedido. Publicar em rede somente com autorização para esse destino.
 

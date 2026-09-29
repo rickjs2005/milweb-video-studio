@@ -1,5 +1,15 @@
 # Histórico de validação
 
+## Versão 0.4.0 — 29/09/2026
+
+Atualização de instruções e documentação para composição em camadas, recorte, cenários virtuais, 3D e construção visual de sites. O script de mídia não mudou; os testes técnicos de 0.1.0 não foram repetidos.
+
+- Validador estrutural aprovado na skill instalada; links internos e blocos Markdown conferidos.
+- Um agente em contexto separado recebeu a skill e um pedido apenas de plano: Reel de 30 s, apresentador com câmera em movimento e mãos diante do rosto, captura única do hero, notebook com 8 GB e sem ferramentas pagas.
+- O plano preservou 30 s, separou hipótese técnica de alegação de edição ao vivo, identificou riscos de recorte e manteve a captura como demonstração visual, sem inventar navegação. Propôs camadas 2D, proxies, uma prova futura do trecho difícil e alternativa caso a máscara falhasse. Não gerou mídia nem executou render.
+
+Esse ensaio valida comportamento de planejamento. Não confirma qualidade de recorte, desempenho de render, reconstrução 3D ou resultado audiovisual final. Esses itens precisam ser verificados com mídia e ferramentas reais no projeto de produção.
+
 ## Versão 0.2.0 — 28/09/2026
 
 Mudança de instruções e documentação: pesquisa com nível de inspeção, estratégia/calendário, métricas e proteção de informações na captura. O script de mídia não foi alterado; os oito resultados técnicos abaixo pertencem à validação de 0.1.0 e não foram repetidos nesta revisão.
