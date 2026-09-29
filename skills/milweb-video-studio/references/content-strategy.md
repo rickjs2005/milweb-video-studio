@@ -2,6 +2,8 @@
 
 ## Priorizar o que vale produzir
 
+Consultar [social-networks.md](social-networks.md) para o posicionamento por canal e o briefing progressivo. Coletar uma vez o contexto comum; adaptar texto, composição, evidência e CTA por destino. Não presumir que todo conteúdo será vídeo.
+
 Definir objetivo e público por peça: descoberta, demonstração de competência, aprendizado, relacionamento ou conversa comercial. Um vídeo pode cumprir mais de um papel, mas escolher a métrica principal pelo objetivo. Popularidade de anime, humor ou IA não garante público interessado no serviço.
 
 Inventariar materiais prontos, acesso, tempo de captura/edição e orçamento. Avaliar ideias por adequação ao público, prova disponível, qualidade da evidência, esforço e custo adicional. Classificar qualitativamente como alto/médio/baixo com motivo; não inventar pontuações de “chance de viralizar”. Recomendar até três prioridades quando houver várias opções.
@@ -24,7 +26,7 @@ Não limitar o perfil a esses formatos nem fixar uma proporção universal entre
 
 ## Transformar uma referência em plano executável
 
-Entregar por ideia: objetivo, público, referência e nível de inspeção, hipótese, abertura proposta, progressão com tempos, fontes visuais, texto/fala, áudio, transições, conclusão/CTA, esforço, custo e critério de revisão.
+Entregar por ideia: objetivo, público, referência e nível de inspeção, hipótese, abertura proposta, fontes visuais, texto, conclusão/CTA, esforço, custo e critério de revisão. Para vídeo, acrescentar progressão com tempos, fala, áudio e transições. Para posts, Pins ou carrosséis, definir texto, composição e ordem de leitura, sem impor elementos audiovisuais.
 
 Escolher CTA coerente: assistir outra peça, comentar, visitar portfólio, conversar ou nenhum. Não impor CTA comercial nem proibi-lo em todos os vídeos. Evitar alegações como “seu site perde clientes” ou ganhos de conversão sem medição; apresentar problemas observáveis de navegação/clareza como tais.
 
@@ -35,7 +37,7 @@ Confirmar áudio e licença conforme audio.md. Botão “usar este áudio” e b
 1. Usar datas completas e fuso do usuário; conferir correspondência entre data e dia da semana. Não carregar datas de uma pesquisa anterior como se fossem futuras.
 2. Montar a agenda conforme capacidade, prazo e materiais. Três peças boas podem ser a agenda inteira; sete dias não exigem sete posts.
 3. Distinguir prioridades, complementos opcionais e dependências. Uma cena ainda não gerada não está pronta para publicar.
-4. Registrar adaptações TikTok/Reels/Shorts: abertura, duração, texto, composição, som, capa e legenda. Um mesmo master pode servir, mas desempenho equivalente precisa ser testado em cada rede.
+4. Registrar adaptações por rede: texto, composição, formato e CTA; para vídeos, também abertura, duração, som, capa e legenda. Um mesmo master pode servir, mas desempenho equivalente precisa ser testado em cada rede.
 5. Definir hipótese e observação por post; usar performance.md para comparar resultados. Sem dados de audiência, tratar horários como hipóteses compatíveis com a rotina, não “melhores horários”.
 
 Entregar o calendário é planejamento. Não agendar, publicar nem configurar automação sem solicitação para essas ações.

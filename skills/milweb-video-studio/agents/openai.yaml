@@ -1,4 +1,4 @@
 interface:
   display_name: "MilWeb Video Studio"
-  short_description: "Direção, Higgsfield e edição de vídeos para cada rede"
-  default_prompt: "Use $milweb-video-studio para planejar e produzir meu vídeo, respeitando o briefing, o orçamento e a plataforma."
+  short_description: "Conteúdo por rede social, direção e edição de vídeos"
+  default_prompt: "Use $milweb-video-studio para escolher a rede social e criar conteúdo, respeitando meu objetivo, materiais e orçamento."

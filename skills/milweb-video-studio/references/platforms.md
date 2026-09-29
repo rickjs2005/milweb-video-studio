@@ -11,11 +11,15 @@ Estas faixas são sugestões editoriais iniciais, não limites de upload nem exi
 | YouTube longo | 6–15 min para estudo de caso | Título/capa, capítulos, explicação, progressão e evidência |
 | Bilibili | 4–12 min para teste explicativo | Localização, contexto cultural e comunidade |
 | Facebook Reels | Adaptar o vertical ao público | Contexto local e compreensão imediata |
-| Pinterest | Demo orientada à busca | Utilidade, texto legível e descoberta duradoura |
+| Pinterest | Pin estático, composição de telas ou vídeo conforme os materiais | Portfólio visual, estética, descrição pesquisável e destino coerente |
 | WhatsApp Status | Sequência legível e curta | Serviço concreto e resposta fácil |
 | X | Demo com contexto no post | Descoberta técnica e acesso ao projeto |
 
 Não fixar duração máxima de Shorts, Reels ou TikTok de memória. Verificar recursos da conta, categoria, região e acesso, sobretudo em plataforma ainda não utilizada como Bilibili.
+
+## Briefing e formatos sem vídeo
+
+Usar [social-networks.md](social-networks.md) para conduzir a escolha da rede e suas perguntas. As faixas em segundos desta página só se aplicam quando a entrega for vídeo; LinkedIn e Instagram também podem receber texto/carrossel, e Pinterest pode receber Pin estático. Não converter essas entregas em vídeos sem pedido.
 
 ## Derivar versões
 

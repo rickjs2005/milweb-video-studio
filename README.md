@@ -1,15 +1,17 @@
 # MilWeb Video Studio
 
-Uma skill em português para transformar um briefing em pesquisa, direção, roteiro, geração de cenas, edição, áudio e revisão de vídeo. Feita para **Claude Code** e outros agentes compatíveis com o formato `SKILL.md`.
+Uma skill em português para escolher a rede social, conduzir um briefing progressivo e criar conteúdo: posts, Pins, carrosséis ou vídeos com pesquisa, direção, roteiro, geração de cenas, edição, áudio e revisão. Feita para **Claude Code** e outros agentes compatíveis com o formato `SKILL.md`.
 
 Serve tanto para um Reel de portfólio quanto para um tutorial longo, uma cena no Higgsfield ou uma correção pontual de montagem. O núcleo é independente de editor; os módulos orientam a escolha da ferramenta disponível.
 
 ## O que ela faz
 
+- Pergunta a rede quando ela não foi informada e faz perguntas específicas aos poucos, sem repetir respostas.
+- Orienta LinkedIn, Pinterest, Instagram e TikTok com posicionamento e entregas próprios.
 - Pesquisa referências atuais e distingue tendência observada de ideia autoral.
 - Prioriza ideias e monta calendários conforme público, materiais, tempo e orçamento.
 - Analisa métricas sem confundir tempo médio com retenção ou atribuir causas sem evidência.
-- Adapta linguagem para Instagram, TikTok, LinkedIn, YouTube, Bilibili e outras redes.
+- Adapta linguagem para Instagram, TikTok, LinkedIn, Pinterest, YouTube, Bilibili e outras redes.
 - Planeja roteiro, shot list, ritmo, transições e captura real de sites.
 - Prepara geração no Higgsfield com referências, continuidade, orçamento e limite de tentativas.
 - Orienta montagem com Remotion, FFmpeg, Higgsedit ou o editor do projeto.
@@ -57,6 +59,23 @@ Para uso somente em um projeto, coloque a pasta da skill em `.claude/skills/milw
 
 Se você já usa `milweb-video` ou `edicao-video-capcut`, mantenha os arquivos antigos enquanto compara as versões. Invoque esta skill pelo nome para testar; não é necessário apagar outras skills.
 
+## Escolha da rede e perguntas progressivas
+
+Comece com `/milweb-video-studio Quero criar conteúdo de um site meu.`
+
+Sem uma rede definida, a skill pergunta: **“Para qual rede vamos criar: LinkedIn, Pinterest, Instagram ou TikTok?”** Depois segue com perguntas sobre objetivo, público, projeto, materiais e formato, uma por vez ou duas relacionadas. Se você já informou algo, ela não pergunta de novo. Outros destinos, como YouTube e sites, continuam disponíveis.
+
+| Rede | Posicionamento inicial para a MilWeb | Entregas possíveis |
+|---|---|---|
+| LinkedIn | Autoridade e conexões profissionais | Case, aprendizado, post, documento/carrossel ou vídeo |
+| Pinterest | Portfólio visual e estética sofisticada | Pin, composição de telas, série visual ou vídeo |
+| Instagram | Confiança, projetos e contato comercial | Reel, carrossel, Stories e legenda |
+| TikTok | Personalidade, humor, bastidores e experimentos | Ideia, roteiro e vídeo adaptado ao público |
+
+São direções de marca, não garantias de desempenho. A pesquisa é adequada a cada destino: trends e formatos em Instagram/TikTok, discussões e cases no LinkedIn, buscas e referências visuais no Pinterest. Falta de acesso ou evidência deve ser declarada.
+
+As quatro especialidades estão no mesmo pacote. Conteúdo estático não exige produção de vídeo; pedidos de planejamento não autorizam publicação ou geração paga.
+
 ## Primeiro teste, sem gastar créditos
 
 No Claude Code:
@@ -81,6 +100,7 @@ Para um trabalho real, informe URL ou arquivos, objetivo, público, destino, dur
 | Arquivo | Papel |
 |---|---|
 | [SKILL.md](skills/milweb-video-studio/SKILL.md) | Escopo, fluxo, seleção de módulos e critérios centrais |
+| `social-networks.md` | Escolha da rede, perguntas progressivas e quatro especialidades sociais |
 | `research.md` | Pesquisa e qualidade de evidência |
 | `content-strategy.md` | Prioridades, formatos e calendário editorial |
 | `performance.md` | Métricas, hipóteses e testes de conteúdo |
@@ -114,7 +134,7 @@ python -m unittest discover -s tests -v
 
 ## Escopo desta versão
 
-Versão **0.2.0**: inclui planejamento de conteúdo, análise de resultados e critérios mais rigorosos para pesquisas baseadas em miniaturas, métricas públicas e referências antigas. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
+Versão **0.3.0**: adiciona briefing progressivo e especialidades para LinkedIn, Pinterest, Instagram e TikTok, com pesquisa por destino e suporte a posts, Pins e carrosséis. Preserva planejamento de conteúdo, análise de resultados e critérios de evidência da versão anterior. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
 
 O conteúdo é original e usa projetos públicos como referências de estudo, sem incorporar seus arquivos. Veja [fontes](skills/milweb-video-studio/references/sources.md) e [licenças de terceiros](THIRD_PARTY.md).
 

@@ -2,8 +2,8 @@
 
 ## Procedimento
 
-1. Pesquisar antes de propor um conceito novo. Para campanhas sociais, consultar Instagram e TikTok e, se diferente, a rede de destino. Para revisão mecânica ou continuação de roteiro aprovado, reutilizar pesquisa pertinente.
-2. Partir de público, nicho, país/idioma e objetivo. Buscar exemplos recentes, preferindo os últimos sete dias; ampliar para 30 quando necessário. Para narrativas longas, incluir referências duráveis e explicar a relevância.
+1. Pesquisar antes de propor um conceito novo. Para Instagram ou TikTok, consultar as duas plataformas e priorizar o destino escolhido. Para LinkedIn, pesquisar discussões profissionais, cases e publicações do público; para Pinterest, Pins, termos de busca e referências visuais do nicho. Para outros destinos, consultar a própria rede e referências pertinentes. Usar social-networks.md para o foco editorial; não impor trends de vídeos curtos a todas as redes. Para revisão mecânica ou continuação de roteiro aprovado, reutilizar pesquisa pertinente.
+2. Partir de público, nicho, país/idioma e objetivo. Buscar exemplos recentes, preferindo os últimos sete dias; ampliar para 30 quando necessário. Para narrativas longas, referências visuais do Pinterest e cases profissionais do LinkedIn, incluir exemplos duráveis e explicar a relevância, sem apresentá-los como tendência atual. Fazer consulta atual por tarefa; reutilizar pesquisa pertinente da mesma tarefa e dia, atualizando quando mudar o dia, público, rede ou conceito.
 3. Reunir, quando disponíveis, três a cinco referências realmente úteis. Não preencher cotas com material irrelevante. Abrir os exemplos e distinguir o que foi visto do que veio apenas de título, descrição ou transcrição.
 4. Registrar URL, autor, rede, data de publicação, data de consulta, tema, mecanismo visual/sonoro e métricas públicas contextualizadas. Não confundir indexação com publicação. Não estimar métricas privadas.
 5. Comparar abertura, enquadramento, duração dos planos, progressão de informação, contraste, texto, áudio e final. Adaptar o mecanismo sem copiar identidade, roteiro ou ativos.

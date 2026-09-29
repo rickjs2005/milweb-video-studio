@@ -87,3 +87,41 @@ o encaixe antes de renderizar o trecho. Não refaça a pesquisa nem o roteiro.
 Revise [arquivo] contra [briefing]. Diga o que conseguiu reproduzir, ouvir e medir.
 Separe falhas técnicas, editoriais e itens não verificados. Não altere o arquivo.
 ```
+
+## Escolher a rede com ajuda
+
+```text
+/milweb-video-studio
+Quero criar conteúdo de um site meu. Me ajude a escolher a rede e faça as
+perguntas necessárias aos poucos. Por enquanto, só planejamento.
+```
+
+## Pinterest como vitrine visual
+
+```text
+/milweb-video-studio
+Quero um Pin sofisticado do meu site de café para público internacional.
+Tenho uma captura do hero: [arquivo]. Destino do Pin: [URL do projeto].
+Pesquise referências visuais, proponha a composição, título, descrição e board.
+Identifique o projeto como conceito se for demo. Não publique nem gere vídeo.
+```
+
+## LinkedIn com evidência real
+
+```text
+/milweb-video-studio
+Quero apresentar [projeto] no LinkedIn para atrair agências parceiras.
+A decisão que posso demonstrar é [decisão] e tenho [capturas/dados].
+Pesquise referências profissionais e escreva um post com direção visual.
+Não invente métricas nem transforme o post em vídeo.
+```
+
+## Um projeto, versões próprias
+
+```text
+/milweb-video-studio
+Quero apresentar [projeto] no Instagram e no Pinterest. Tenho [materiais].
+Use um briefing comum e adapte formato, texto, composição e CTA para cada rede.
+O Instagram deve construir confiança; o Pinterest será uma vitrine visual.
+Entregue apenas as propostas, sem postar.
+```
