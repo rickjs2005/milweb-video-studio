@@ -11,7 +11,7 @@ Para análise, separar observação visual, fala transcrita e som ouvido. Extrai
 ## Gravar sites e produtos
 
 1. Abrir a URL em ambiente permitido. Não realizar compras, envios ou alterações para “mostrar a função”. Usar dados de demonstração autorizados.
-2. Definir viewport e aspecto. Aguardar fontes, imagens e vídeos necessários. Verificar popups, carregamentos e estados vazios.
+2. Separar aspecto de exportação e viewport de captura. Resolver desktop/mobile/ambos pelo briefing antes de gravar; se faltar, perguntar conforme creative-brief.md. Um Reel 9:16 não determina site mobile. Preservar a versão de capturas recebidas. Planejar tela inteira, margens ou detalhes sem crop/zoom que oculte conteúdo importante fora da direção combinada. Aguardar fontes, imagens e vídeos necessários. Verificar popups, carregamentos e estados vazios.
 3. Planejar uma ação por tomada. Posicionar cursor deliberadamente; mover/rolar sem tremor ou saltos desnecessários. Capturar margem antes/depois da ação.
 4. Preservar conteúdo real. Mostrar escala suficiente para reconhecer o layout; aproximar onde ajudar a demonstração.
 5. Se prometer responsividade, capturar e testar o estado móvel real. Recorte vertical de desktop não demonstra funcionamento no celular.

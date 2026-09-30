@@ -1,5 +1,15 @@
 # Histórico de validação
 
+## Versão 0.5.1 — 30/09/2026
+
+Regras explícitas de captura desktop/mobile, enquadramento e elementos acrescentados. Validador estrutural e diff sem erros. Nenhum script de mídia foi alterado.
+
+Um agente em contexto separado recebeu dois cenários, sem respostas esperadas e sem mídia ou produção:
+- Reel vertical com captura nova e layout não informado: perguntou desktop/mobile/ambos antes de gravar.
+- Plano com gravação desktop inteira, sem voz/texto e com áudio original: preservou a composição com margens, sem propor legendas nem troca para mobile. Declarou a ausência do arquivo e a dependência da duração para fechar o plano.
+
+Verificação de primeiras respostas, sem execução de captura/edição e sem avaliação audiovisual.
+
 ## Versão 0.5.0 — 30/09/2026
 
 Atualização de instruções para briefing criativo e diagnóstico de insatisfação. O script de mídia não mudou; testes técnicos anteriores não foram repetidos.

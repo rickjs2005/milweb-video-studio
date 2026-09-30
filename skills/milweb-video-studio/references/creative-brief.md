@@ -20,6 +20,16 @@ Exemplo para “quero um Reel do meu site”, sem outros dados: “Você quer qu
 
 Quando houver preferência clara, aprofundar apenas o necessário. “Quero cinematic” pode exigir distinguir paisagem contemplativa de câmera rápida e efeitos. “Igual a este” não autoriza copiar tudo nem comprova que a referência foi assistida: declarar o nível de inspeção conforme research.md.
 
+## Decisões de edição que não podem ser inferidas da rede
+
+- **Versão do site ≠ formato do vídeo.** 9:16 é a tela de entrega; desktop/mobile é o layout capturado. Antes de gravar um site novo, resolver “Você quer mostrar o site na versão desktop, mobile ou as duas?” se isso ainda não estiver definido ou explicitamente delegado. Não abrir em emulação mobile automaticamente porque o destino é Instagram/TikTok. Material recebido mantém sua versão por padrão.
+- **Enquadramento.** Explicar como a captura vai caber no vídeo. Desktop pode aparecer inteiro em uma composição vertical, com fundo ou margens. Se isso comprometer leitura, apresentar a alternativa antes de trocar o layout ou cortar áreas importantes. Não usar zoom/crop para preencher 9:16 escondendo o projeto sem que faça parte da direção combinada.
+- **Legendas de fala e texto gráfico são escolhas separadas.** Perguntar sobre legendas se houver fala e a escolha estiver pendente; sem pedido/briefing/delegação aplicável, não adicioná-las. Não inventar frases na tela em um vídeo sem fala. Títulos, slogans e CTA também não entram automaticamente. Texto original da interface não é legenda adicionada.
+- **Som e presença.** Preservar áudio existente em ajuste pontual, salvo pedido contrário. Em nova edição, definir as camadas relevantes; não introduzir narrador, música, apresentador ou SFX por hábito.
+- **Delegação tem escopo.** “Escolha as transições” não delega versão do site, legendas ou música. “Pode decidir toda a direção” permite propor e executar essas escolhas, respeitando proibições e declarando-as antes da execução. Não repetir decisões já fornecidas.
+
+Perguntas concretas devem resolver escolhas reais. Exemplo de rodada de apresentação: “Quer mostrar desktop ou mobile? Prefere a tela inteira ou aproximar detalhes?” Em outra rodada, se necessário: “Quer algum texto acrescentado ao vídeo ou somente as imagens do site?” Não fazer todas as rodadas quando o contexto já responde.
+
 ## Saber quando avançar
 
 Manter um resumo curto das decisões: informado pelo usuário, observado na mídia, delegado ao agente ou ainda pendente. Registrar preferências para não perguntar novamente. Não transformar falta de resposta em preferência confirmada.

@@ -26,6 +26,8 @@ Placeholder é permitido apenas em rascunho claramente identificado. Não encerr
 
 ## Legendas
 
+Aplicar esta seção somente quando legendas fizerem parte do pedido, briefing ou delegação criativa explícita. Não gerar nem queimar legendas por padrão por ser Instagram/TikTok. Se houver fala e a preferência estiver pendente, perguntar antes de acrescentá-las. Sem fala, não inventar texto para preencher a tela. Títulos, slogans e CTA são elementos gráficos separados e também precisam estar previstos; texto original do site não é legenda adicionada. Em ajustes pontuais, preservar legendas já existentes salvo pedido de alteração; avisar se remover legendas embutidas exigir reconstrução de imagem.
+
 Transcrever e revisar especialmente nomes, números, negações e termos técnicos. Conferir sincronização no arquivo final após cortes. Quebrar em unidades de sentido, limitar densidade visual e dar tempo de leitura; não impor animação palavra a palavra a todo gênero.
 
 Garantir contraste sem cobrir interface, rostos ou controles da plataforma. Separar legenda de fala, títulos e dados em tela. Entregar SRT/VTT quando adequado; queimar no vídeo se solicitado ou definido no briefing. Não publicar transcrição automática sem revisão como se fosse exata.

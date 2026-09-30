@@ -63,6 +63,10 @@ Não inserir confirmações entre etapas reversíveis já autorizadas. Continuar
 
 ## 4. Aplicar os critérios editoriais
 
+- Trabalhar como editor orientado pelo briefing: inspecionar material, definir montagem e executar escolhas combinadas. A plataforma e as tendências não autorizam acrescentar elementos por conta própria.
+- Separar formato de exportação de versão do site: vídeo vertical não implica captura mobile. Resolver desktop/mobile/ambos antes de uma captura nova; preservar a versão do material recebido quando não houver mudança solicitada.
+- Não adicionar legendas, títulos, CTA, narração ou música só por serem usuais na rede. Usar quando pedidos, definidos no briefing ou abrangidos por delegação criativa explícita; silêncio do usuário não é delegação. Para detalhes, aplicar creative-brief.md.
+
 - Escolher duração e ritmo pelo conteúdo e briefing. Não impor 15–30 segundos, gancho verbal em três segundos ou efeito a cada cinco segundos.
 - Preservar pausas, planos contemplativos e silêncio intencional. Uma cena longa pode evoluir em ação, composição, som ou descoberta sem receber corte artificial.
 - Avaliar transições pelos quadros reais de saída e entrada. Desfoque para ocultar um corte não comprova continuidade espacial.

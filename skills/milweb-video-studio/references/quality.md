@@ -24,6 +24,8 @@ Requer Python 3.10+ e ffprobe; `--decode` requer ffmpeg. Não instala dependênc
 
 ## Revisão final
 
+- Comparar a versão capturada do site (desktop/mobile/ambas), enquadramento, zoom/crop e elementos adicionados com as decisões do briefing. Conferir separadamente legendas de fala, títulos/CTA e texto original da interface. Corrigir divergências; não justificar adições não combinadas como “melhor para o algoritmo”.
+
 - Confirmar duração total e intervalos mínimos no filme final, contabilizando transições sobrepostas.
 - Reproduzir o início, fim e todas as junções críticas; para aprovação final, assistir à peça completa. Em vídeos longos, amostragem pode apoiar diagnóstico, mas não equivale a revisão integral.
 - Conferir quadros pretos, congelamentos, flash frames, cortes de texto, pixelização, logos e conteúdo real. Detectores automáticos geram candidatos: plano estático ou fade preto pode ser intencional.
