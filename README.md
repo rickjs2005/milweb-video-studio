@@ -7,6 +7,8 @@ Serve tanto para um Reel de portfólio quanto para um tutorial longo, uma cena n
 ## O que ela faz
 
 - Pergunta a rede quando ela não foi informada e faz perguntas específicas aos poucos, sem repetir respostas.
+- Investiga intenção, estilo, referência, ritmo, áudio e forma de mostrar o site antes de roteirizar ou editar.
+- Diagnostica o que não agradou e o que preservar antes de refazer um vídeo.
 - Orienta LinkedIn, Pinterest, Instagram e TikTok com posicionamento e entregas próprios.
 - Pesquisa referências atuais e distingue tendência observada de ideia autoral.
 - Prioriza ideias e monta calendários conforme público, materiais, tempo e orçamento.
@@ -65,7 +67,7 @@ Se você já usa `milweb-video` ou `edicao-video-capcut`, mantenha os arquivos a
 
 Comece com `/milweb-video-studio Quero criar conteúdo de um site meu.`
 
-Sem uma rede definida, a skill pergunta: **“Para qual rede vamos criar: LinkedIn, Pinterest, Instagram ou TikTok?”** Depois segue com perguntas sobre objetivo, público, projeto, materiais e formato, uma por vez ou duas relacionadas. Se você já informou algo, ela não pergunta de novo. Outros destinos, como YouTube e sites, continuam disponíveis.
+Sem uma rede definida, a skill pergunta: **“Para qual rede vamos criar: LinkedIn, Pinterest, Instagram ou TikTok?”** A escolha da rede é apenas o início. Para vídeo, investiga objetivo, público, estilo visual, referências, ritmo, apresentação do site, áudio e materiais, uma pergunta por vez ou duas relacionadas. As perguntas são adaptadas ao que realmente falta; um briefing completo ou escolhas delegadas permitem avançar diretamente. Se você já informou algo, ela não pergunta de novo. Outros destinos, como YouTube e sites, continuam disponíveis.
 
 | Rede | Posicionamento inicial para a MilWeb | Entregas possíveis |
 |---|---|---|
@@ -103,6 +105,7 @@ Para um trabalho real, informe URL ou arquivos, objetivo, público, destino, dur
 |---|---|
 | [SKILL.md](skills/milweb-video-studio/SKILL.md) | Escopo, fluxo, seleção de módulos e critérios centrais |
 | `social-networks.md` | Escolha da rede, perguntas progressivas e quatro especialidades sociais |
+| `creative-brief.md` | Direção criativa antes da edição e diagnóstico de insatisfação |
 | `research.md` | Pesquisa e qualidade de evidência |
 | `content-strategy.md` | Prioridades, formatos e calendário editorial |
 | `performance.md` | Métricas, hipóteses e testes de conteúdo |
@@ -137,7 +140,7 @@ python -m unittest discover -s tests -v
 
 ## Escopo desta versão
 
-Versão **0.4.0**: adiciona um fluxo de composição avançada para recorte, cenários virtuais, animação 2.5D/3D e sites montados em camadas, com prova curta, critérios de revisão e planejamento de render em máquinas limitadas. Preserva o briefing por rede, posts, Pins, carrosséis e produção de vídeo. São procedimentos e critérios de execução; não há modelo de segmentação ou cena 3D pronta incluídos. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
+Versão **0.5.0**: aprofunda o briefing antes do roteiro/edição e inclui diagnóstico de resultados que não agradaram, sem repetir perguntas nem impor um questionário completo. Mantém o fluxo de composição avançada para recorte, cenários virtuais, animação 2.5D/3D e sites montados em camadas, com prova curta, critérios de revisão e planejamento de render em máquinas limitadas. Preserva o briefing por rede, posts, Pins, carrosséis e produção de vídeo. São procedimentos e critérios de execução; não há modelo de segmentação ou cena 3D pronta incluídos. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
 
 O conteúdo é original e usa projetos públicos como referências de estudo, sem incorporar seus arquivos. Veja [fontes](skills/milweb-video-studio/references/sources.md) e [licenças de terceiros](THIRD_PARTY.md).
 

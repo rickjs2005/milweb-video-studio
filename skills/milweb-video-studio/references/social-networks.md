@@ -6,6 +6,8 @@ Tratar os itens abaixo como caminhos de conversa, não como formulário obrigat�
 
 Reutilizar preferências estáveis de marca; confirmar escolhas específicas somente quando houver ambiguidade material. Não usar ausência de resposta opcional como impedimento para planejar. Distinguir finalidade do conteúdo de formato: “atrair clientes” não implica obrigatoriamente venda direta.
 
+Para vídeo novo ou revisão de direção, aplicar também [creative-brief.md](creative-brief.md). Os posicionamentos abaixo são ponto de partida; não substituem perguntas sobre a experiência visual pretendida.
+
 ## LinkedIn — autoridade e conexões profissionais
 
 Adotar como posicionamento da MilWeb: raciocínio de design, desenvolvimento, soluções para negócios e aprendizado demonstrável. Escrever de forma profissional e humana; evitar conquistas inventadas, frases de autoridade vazias e resultados sem medição.
@@ -40,14 +42,16 @@ Identificar conceito/demo como tal. Não insinuar vínculo com marcas ou cliente
 
 ## Instagram — confiança e apresentação comercial
 
-Adotar como direção: mostrar qualidade e processo, esclarecer benefícios para clientes e facilitar interesse pelo trabalho. Manter identidade visual consistente, sem converter toda publicação em oferta explícita.
+Usar confiança e apresentação de projetos como posicionamento inicial. Definir com o usuário se esta peça será portfólio visual, processo, demonstração, humor ou oferta; estar no Instagram não determina linguagem comercial. Manter identidade visual consistente.
 
 Perguntas possíveis:
 - “O objetivo é apresentar um projeto, construir confiança ou gerar contatos?”
 - “Qual projeto e qual benefício vamos mostrar?”
 - “Quer Reel, carrossel ou Stories, ou prefere que eu recomende?”
 - “Você vai aparecer/narrar ou quer só o projeto?”
-- “Qual ação faz sentido no final: ver o portfólio, comentar, salvar ou entrar em contato?”
+- “Qual ação faz sentido no final: ver o portfólio, comentar, salvar, entrar em contato ou só apreciar o projeto?”
+
+Para Reels, aprofundar progressivamente a direção: apresentação limpa de telas, filme contemplativo, montagem musical ou bastidor explicado? Qual parte do site precisa ficar legível, e ele aparece desde o começo ou será revelado? Usar creative-brief.md para selecionar uma pergunta por vez, reaproveitando respostas. Não impor voz, texto ou cortes rápidos.
 
 Pesquisar Instagram e TikTok, priorizando referências compatíveis com o Instagram e seu público. Não assumir que humor, áudio ou montagem funcionam igualmente nos dois destinos. Usar provas reais e identificação de demo/conceito.
 

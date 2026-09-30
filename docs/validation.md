@@ -1,5 +1,17 @@
 # Histórico de validação
 
+## Versão 0.5.0 — 30/09/2026
+
+Atualização de instruções para briefing criativo e diagnóstico de insatisfação. O script de mídia não mudou; testes técnicos anteriores não foram repetidos.
+
+- Validador estrutural aprovado e links locais conferidos.
+- Um agente em contexto separado leu a skill e respondeu a três cenários independentes, sem respostas esperadas, pesquisa externa, edição, render ou serviços pagos.
+- Pedido vago “Quero um Reel do meu site”: perguntou sobre a intenção do vídeo, sem iniciar um roteiro.
+- Feedback “não gostei… ficou estranho”, sem arquivo: perguntou o ponto de insatisfação, sem alegar inspeção da mídia ou inventar causa.
+- Briefing completo de Reel de 30 s: entregou plano que soma 30 s, preservando ritmo calmo, desktop antes de mobile, ausência de narrador e de oferta, sem perguntas redundantes.
+
+Este ensaio verifica primeiras respostas e planejamento. Não valida uma conversa inteira de briefing, a execução dentro do Claude Code nem a qualidade estética de um vídeo renderizado.
+
 ## Versão 0.4.0 — 29/09/2026
 
 Atualização de instruções e documentação para composição em camadas, recorte, cenários virtuais, 3D e construção visual de sites. O script de mídia não mudou; os testes técnicos de 0.1.0 não foram repetidos.

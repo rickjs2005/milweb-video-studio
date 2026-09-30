@@ -146,3 +146,34 @@ Use material existente e ferramentas locais. Não altere o site em produção,
 não use serviços pagos e não publique. Meça o render e entregue o preview
 com o que conseguiu verificar e as limitações de reprodução/áudio.
 ```
+
+## Instagram sem direção definida
+
+```text
+/milweb-video-studio
+Quero um Reel para mostrar meu site, mas ainda não sei o estilo.
+Me faça perguntas específicas aos poucos antes de montar o roteiro.
+```
+
+A rede já foi informada. A conversa deve investigar a intenção e depois a direção visual, o ritmo, o foco do site e os materiais, conforme as respostas.
+
+## Um resultado que não agradou
+
+```text
+/milweb-video-studio
+Não gostei do vídeo de Instagram que fizemos.
+Antes de refazer, me ajude a identificar o que mudar e o que preservar.
+```
+
+Se o arquivo não estiver acessível, o agente deve distinguir o relato do usuário de uma análise que ainda não realizou. Não deve presumir que adicionar efeitos resolve.
+
+## Briefing completo sem questionário extra
+
+```text
+/milweb-video-studio
+Só planeje um Reel de 30 segundos do site [URL] para donos de hotéis.
+Quero apresentar o design, sem oferta. Visual limpo, ritmo calmo, sem narrador,
+com música instrumental discreta e sem texto além do nome do projeto.
+Mostre desktop desde o início, depois mobile; priorize hero e reservas legíveis.
+Tenho [capturas]. Escolha os detalhes restantes. Não renderize nem publique.
+```

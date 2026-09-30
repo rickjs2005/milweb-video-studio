@@ -1,6 +1,6 @@
 ---
 name: milweb-video-studio
-description: "Pesquisar referências e tendências, planejar conteúdo e calendários, dirigir, roteirizar, gerar e editar vídeos ou executar ajustes pontuais. Conduzir briefing progressivo para LinkedIn, Pinterest, Instagram e TikTok, sem repetir respostas. Usar para posts, Pins, carrosséis, Reels, TikTok, LinkedIn, YouTube, Bilibili, sites e produtos, Higgsfield, transições, motion, composição em camadas, recorte de apresentador, cenários virtuais, 3D, construção visual de sites, Remotion, áudio, legendas, revisão e análise de métricas. Atender também pedidos só de pesquisa, roteiro ou prompts sem iniciar geração. Adaptar duração e linguagem ao briefing e às ferramentas disponíveis."
+description: "Pesquisar referências e tendências, planejar conteúdo e calendários, dirigir, roteirizar, gerar e editar vídeos ou executar ajustes pontuais. Conduzir briefing criativo progressivo para LinkedIn, Pinterest, Instagram e TikTok: objetivo, estilo, referência, ritmo, áudio e apresentação do site; diagnosticar insatisfação sem repetir respostas. Usar para posts, Pins, carrosséis, Reels, TikTok, LinkedIn, YouTube, Bilibili, sites e produtos, Higgsfield, transições, motion, composição em camadas, recorte de apresentador, cenários virtuais, 3D, construção visual de sites, Remotion, áudio, legendas, revisão e análise de métricas. Atender também pedidos só de pesquisa, roteiro ou prompts sem iniciar geração. Adaptar duração e linguagem ao briefing e às ferramentas disponíveis."
 ---
 
 # MilWeb Video Studio
@@ -13,14 +13,14 @@ Atuar com critério de direção e edição profissional: justificar decisões p
 
 Para conteúdo social novo, ler [social-networks.md](references/social-networks.md). Quando a rede não estiver definida, começar com: **“Para qual rede vamos criar: LinkedIn, Pinterest, Instagram ou TikTok? Se estiver indeciso, posso recomendar pelo seu objetivo.”** Aguardar a resposta antes das perguntas específicas. Aceitar também outros destinos já suportados, como YouTube, Bilibili ou site; não limitar a escolha às quatro opções.
 
-Se o pedido ou contexto inequívoco já indicar a rede, pular essa pergunta. Fazer uma pergunta por vez, ou no máximo duas estreitamente relacionadas, seguindo rede → objetivo/público → projeto/materiais → formato/entrega. Perguntar só pelo que falta e muda a decisão; recomendar quando houver indecisão. Se o usuário pedir execução direta com dados suficientes, continuar sem questionário.
+Se o pedido ou contexto inequívoco já indicar a rede, pular essa pergunta. Para vídeo novo ou mudança de direção, ler [creative-brief.md](references/creative-brief.md) antes de roteiro ou edição. A rede define o destino, mas não resolve estilo, ritmo ou intenção. Fazer uma pergunta por vez, ou no máximo duas relacionadas, escolhendo a lacuna criativa mais relevante. Perguntar só pelo que falta e muda a decisão; recomendar quando houver indecisão. Se o usuário pedir execução direta com dados suficientes, continuar sem questionário.
 
 Para várias redes, coletar o contexto comum uma vez e criar versões próprias. Para ajuste pontual em conteúdo aprovado ou análise de métricas, preservar o destino conhecido e não reiniciar briefing. Tratar LinkedIn, Pinterest, Instagram e TikTok como especialidades internas: não exigir quatro instalações nem simular acionamento de ferramentas.
 
 
 Classificar a solicitação: pesquisa, análise de referência, estratégia/calendário, análise de resultados, post, Pin, carrossel, roteiro, prompts, geração, edição pontual ou produção completa. Executar somente o escopo solicitado. Um pedido de plano não autoriza render, gasto ou publicação.
 
-Extrair da conversa: objetivo, público, destino/superfície, duração total e mínima por cena, materiais, identidade, voz/idioma, prazo, orçamento e restrições. Reaproveitar decisões anteriores. Perguntar apenas pelo dado que realmente bloqueia o próximo passo; adotar e declarar hipóteses reversíveis para os demais.
+Extrair da conversa: objetivo, público, destino/superfície, duração total e mínima por cena, materiais, identidade, voz/idioma, prazo, orçamento e restrições. Reaproveitar decisões anteriores. Resolver também lacunas criativas que mudem materialmente o resultado: não tratar estilo e ritmo desconhecidos como detalhes opcionais só porque já há material para editar. Usar hipóteses para detalhes secundários ou escolhas explicitamente delegadas; não substituir o briefing por uma sequência de suposições.
 
 Transformar números explícitos em critérios verificáveis. Se houver “pelo menos 25 segundos de savana antes do site”, reservar esse intervalo na timeline. Não presumir que sejam 25 segundos no total. Se a frase for ambígua e mudar o roteiro, esclarecer a interpretação.
 
@@ -31,6 +31,7 @@ Verificar as capacidades reais: arquivos acessíveis, navegador/captura, busca, 
 | Trabalho | Referência a ler |
 |---|---|
 | Escolha da rede, perguntas progressivas e posicionamento por canal | [social-networks.md](references/social-networks.md) |
+| Vídeo novo, direção indefinida ou resultado que não agradou | [creative-brief.md](references/creative-brief.md) |
 | Conceito novo, tendências, referências atuais | [research.md](references/research.md) |
 | Ideias, pilares, prioridades e calendário editorial | [content-strategy.md](references/content-strategy.md) |
 | Métricas, retenção, queda de alcance e testes de conteúdo | [performance.md](references/performance.md) |
@@ -51,7 +52,7 @@ Para produção completa, ler progressivamente todos os módulos aplicáveis. Pa
 
 Para texto, Pin estático ou carrossel, entregar conteúdo e direção visual conforme a rede; não impor timeline, voz, áudio, render ou geração de vídeo. Usar os módulos de produção abaixo apenas quando o formato exigir. Roteiro, prompt e planejamento não autorizam geração, publicação ou gasto.
 
-1. **Preparar:** inventariar materiais, medir arquivos e registrar restrições. Em produção nova, pesquisar conforme research.md; respeitar proibição explícita de pesquisa. Selecionar plataforma e linguagem.
+1. **Preparar:** resolver o briefing criativo aplicável antes de fixar roteiro ou editar; inventariar materiais, medir arquivos e registrar restrições. Em produção nova, pesquisar conforme research.md; respeitar proibição explícita de pesquisa. Selecionar plataforma e linguagem.
 2. **Dirigir:** definir promessa, progressão visual e conclusão; montar shot list com tempos, fontes, movimento, texto e áudio. Escolher uma proposta principal fundamentada.
 3. **Produzir materiais:** capturar produto real para demonstrar funcionalidades; gerar cenas quando fizerem sentido e houver acesso/orçamento. Manter fontes e parâmetros rastreáveis. Não substituir prova de produto por interface fictícia.
 4. **Montar:** fazer primeiro o corte com conteúdo e som; adicionar motion e transições que melhorem a compreensão. Para composição complexa, aplicar compositing-vfx.md: decompor o efeito em camadas, conferir materiais/capacidade e testar o trecho de maior risco antes do render longo. Só fazer o teste quando a produção estiver autorizada; em pedido de plano, especificar o teste sem renderizar. Preservar escolhas aprovadas.
