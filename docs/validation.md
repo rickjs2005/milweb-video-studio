@@ -1,5 +1,24 @@
 # Histórico de validação
 
+## Versão 0.6.0 — 07/10/2026
+
+Cinco definições de subagentes para Claude Code, coordenação por canal, YouTube Shorts, vídeo longo independente e estudo de referência orientado por evidências.
+
+- Links relativos dos arquivos alterados conferidos contra a árvore do repositório; cinco definições de agentes presentes, com name/description/skills e sem modelo/permissão fixados.
+- Definições seguem os campos e locais documentados em https://code.claude.com/docs/en/sub-agents, consultada em 07/10/2026.
+- Um agente em contexto separado leu seis arquivos no commit de revisão e respondeu a três cenários: pacote de cinco redes com restrições explícitas; duas referências inacessíveis; episódio independente de 12 minutos.
+- O pacote recebeu propostas distintas sem refazer perguntas respondidas; desktop inteiro, ausência de voz/texto e proibição de pesquisa foram preservados. Referências inacessíveis ficaram pendentes, sem cenas inventadas. O longo iniciou briefing próprio, sem Shorts ou cinco agentes sociais.
+- Ajustada a redação do perfil Instagram para explicitar a exceção de pesquisa proibida pelo usuário.
+
+Esta validação cobre leitura de instruções e primeiras respostas de planejamento. Não executou os agentes dentro de Claude Code, gravação, geração, render, instalação em Windows nem comparação audiovisual. A versão instalada no computador do usuário não foi alterada. O script de mídia não mudou; seus testes anteriores não foram repetidos.
+
+### Referências enviadas nesta revisão
+
+- https://www.tiktok.com/@ivanxuugarcia/video/7691379990612430112
+- https://www.tiktok.com/@rikibosso/video/7692145103363738912
+
+As páginas foram tentadas por leitura web e reprodução no navegador. A reprodução retornou erro para ambos; nenhum trecho audiovisual foi observado. Os links permanecem referências pendentes de mídia acessível. Não fundamentam afirmações de técnicas, ritmo, som, qualidade alcançada ou superioridade. O módulo de estudo define o procedimento a aplicar quando os arquivos estiverem disponíveis.
+
 ## Versão 0.5.1 — 30/09/2026
 
 Regras explícitas de captura desktop/mobile, enquadramento e elementos acrescentados. Validador estrutural e diff sem erros. Nenhum script de mídia foi alterado.
