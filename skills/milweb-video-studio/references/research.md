@@ -9,6 +9,8 @@
 5. Comparar abertura, enquadramento, duração dos planos, progressão de informação, contraste, texto, áudio e final. Adaptar o mecanismo sem copiar identidade, roteiro ou ativos.
 6. Propor uma direção e explicar por que serve ao briefing. Declarar o que será original e o que veio de observação.
 
+Quando houver referência enviada ou pedido de atingir um padrão visual, aplicar também [reference-study.md](reference-study.md) para decompor trechos reais e converter observações em plano de edição e comparação.
+
 ## Grau de evidência
 
 | Rótulo | Critério |

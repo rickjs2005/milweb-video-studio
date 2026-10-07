@@ -10,7 +10,9 @@ Serve tanto para um Reel de portfólio quanto para um tutorial longo, uma cena n
 - Investiga intenção, estilo, referência, ritmo, áudio e forma de mostrar o site antes de roteirizar ou editar.
 - Separa vídeo vertical de captura mobile e respeita escolhas de enquadramento, legendas e texto, sem adições automáticas por rede.
 - Diagnostica o que não agradou e o que preservar antes de refazer um vídeo.
-- Orienta LinkedIn, Pinterest, Instagram e TikTok com posicionamento e entregas próprios.
+- Coordena cinco especialistas: Pinterest, TikTok, Instagram, LinkedIn e YouTube Shorts, com briefing comum e propostas próprias.
+- Trata vídeos longos como projetos independentes, com pesquisa, roteiro e timeline próprios.
+- Estuda referências por trechos e compara amostras por critérios concretos, sem prometer superar um vídeo não verificado.
 - Pesquisa referências atuais e distingue tendência observada de ideia autoral.
 - Prioriza ideias e monta calendários conforme público, materiais, tempo e orçamento.
 - Analisa métricas sem confundir tempo médio com retenção ou atribuir causas sem evidência.
@@ -68,7 +70,7 @@ Se você já usa `milweb-video` ou `edicao-video-capcut`, mantenha os arquivos a
 
 Comece com `/milweb-video-studio Quero criar conteúdo de um site meu.`
 
-Sem uma rede definida, a skill pergunta: **“Para qual rede vamos criar: LinkedIn, Pinterest, Instagram ou TikTok?”** A escolha da rede é apenas o início. Para vídeo, investiga objetivo, público, estilo visual, referências, ritmo, apresentação do site, áudio e materiais, uma pergunta por vez ou duas relacionadas. As perguntas são adaptadas ao que realmente falta; um briefing completo ou escolhas delegadas permitem avançar diretamente. Se você já informou algo, ela não pergunta de novo. Outros destinos, como YouTube e sites, continuam disponíveis.
+Sem uma rede definida, a skill pergunta: **“Para qual rede vamos criar: LinkedIn, Pinterest, Instagram, TikTok ou YouTube Shorts?”** A escolha da rede é apenas o início. Para vídeo, investiga objetivo, público, estilo visual, referências, ritmo, apresentação do site, áudio e materiais, uma pergunta por vez ou duas relacionadas. As perguntas são adaptadas ao que realmente falta; um briefing completo ou escolhas delegadas permitem avançar diretamente. Se você já informou algo, ela não pergunta de novo. Outros destinos, como YouTube e sites, continuam disponíveis.
 
 | Rede | Posicionamento inicial para a MilWeb | Entregas possíveis |
 |---|---|---|
@@ -76,10 +78,35 @@ Sem uma rede definida, a skill pergunta: **“Para qual rede vamos criar: Linked
 | Pinterest | Portfólio visual e estética sofisticada | Pin, composição de telas, série visual ou vídeo |
 | Instagram | Confiança, projetos e contato comercial | Reel, carrossel, Stories e legenda |
 | TikTok | Personalidade, humor, bastidores e experimentos | Ideia, roteiro e vídeo adaptado ao público |
+| YouTube Shorts | Descoberta e demonstração breve | Short com uma ideia completa |
 
 São direções de marca, não garantias de desempenho. A pesquisa é adequada a cada destino: trends e formatos em Instagram/TikTok, discussões e cases no LinkedIn, buscas e referências visuais no Pinterest. Falta de acesso ou evidência deve ser declarada.
 
-As quatro especialidades estão no mesmo pacote. Conteúdo estático não exige produção de vídeo; pedidos de planejamento não autorizam publicação ou geração paga.
+As cinco especialidades compartilham a skill. YouTube longo segue um projeto independente. Conteúdo estático não exige produção de vídeo; pedidos de planejamento não autorizam publicação ou geração paga.
+
+## Agentes por rede no Claude Code
+
+As definições estão em [.claude/agents](.claude/agents). São cinco agentes: `milweb-pinterest`, `milweb-tiktok`, `milweb-instagram`, `milweb-linkedin` e `milweb-youtube-shorts`. A skill principal coordena o briefing, as entregas e a revisão. Aciona apenas os canais pedidos, compartilha materiais e evita gravações/gastos duplicados.
+
+Instale a skill primeiro. Os arquivos de agentes precisam estar em `.claude/agents/` do projeto em que você usa Claude Code, ou em `~/.claude/agents/` para todos os projetos. O comando de instalação da skill acima não instala esses agentes automaticamente. Ao usar Claude Code na raiz deste repositório clonado, os arquivos já estão na localização de projeto; em outro projeto, copie os cinco arquivos para a pasta correspondente, preservando arquivos existentes.
+
+No Windows, após clonar o repositório e abrir PowerShell na raiz dele, a cópia global pode ser feita assim:
+
+```powershell
+$milwebAgentSource = Join-Path (Get-Location) '.claude\agents'
+$milwebAgentTarget = Join-Path $env:USERPROFILE '.claude\agents'
+$milwebAgentFiles = Get-ChildItem $milwebAgentSource -Filter 'milweb-*.md'
+if ($milwebAgentFiles.Count -ne 5) { throw 'Esperados cinco agentes. Confira a pasta do repositorio.' }
+foreach ($milwebAgentFile in $milwebAgentFiles) {
+  if (Test-Path (Join-Path $milwebAgentTarget $milwebAgentFile.Name)) {
+    throw 'Ja existe um agente com esse nome. Compare os arquivos antes de atualizar.'
+  }
+}
+New-Item -ItemType Directory -Force $milwebAgentTarget | Out-Null
+$milwebAgentFiles | Copy-Item -Destination $milwebAgentTarget
+```
+
+Essas instruções seguem a [documentação oficial de subagentes](https://code.claude.com/docs/en/sub-agents). Não incluem modelo fixo, permissões ampliadas ou publicação automática. A skill continua utilizável sem subagentes, aplicando os perfis sequencialmente e declarando esse modo. Instalação e execução no computador do usuário ainda precisam ser verificadas.
 
 ## Primeiro teste, sem gastar créditos
 
@@ -105,8 +132,11 @@ Para um trabalho real, informe URL ou arquivos, objetivo, público, destino, dur
 | Arquivo | Papel |
 |---|---|
 | [SKILL.md](skills/milweb-video-studio/SKILL.md) | Escopo, fluxo, seleção de módulos e critérios centrais |
-| `social-networks.md` | Escolha da rede, perguntas progressivas e quatro especialidades sociais |
+| `social-networks.md` | Escolha da rede, perguntas progressivas e cinco especialidades sociais |
 | `creative-brief.md` | Direção criativa antes da edição e diagnóstico de insatisfação |
+| `channel-agents.md` | Briefing comum, cinco especialistas e coordenação de execução |
+| `reference-study.md` | Análise de trechos, plano de efeitos e comparação de qualidade |
+| `long-form.md` | Episódios longos em projeto independente |
 | `research.md` | Pesquisa e qualidade de evidência |
 | `content-strategy.md` | Prioridades, formatos e calendário editorial |
 | `performance.md` | Métricas, hipóteses e testes de conteúdo |
@@ -141,7 +171,7 @@ python -m unittest discover -s tests -v
 
 ## Escopo desta versão
 
-Versão **0.5.1**: explicita escolhas de desktop/mobile, enquadramento e legendas antes da execução, com conferência na revisão final. Aprofunda o briefing antes do roteiro/edição e inclui diagnóstico de resultados que não agradaram, sem repetir perguntas nem impor um questionário completo. Mantém o fluxo de composição avançada para recorte, cenários virtuais, animação 2.5D/3D e sites montados em camadas, com prova curta, critérios de revisão e planejamento de render em máquinas limitadas. Preserva o briefing por rede, posts, Pins, carrosséis e produção de vídeo. São procedimentos e critérios de execução; não há modelo de segmentação ou cena 3D pronta incluídos. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
+Versão **0.6.0**: adiciona cinco definições de agentes por canal, coordenação com briefing comum, YouTube Shorts, fluxo independente para vídeos longos e estudo de referências com comparação de amostras. Preserva as regras de desktop/mobile, enquadramento e legendas. Mantém o fluxo de composição avançada para recorte, cenários virtuais, animação 2.5D/3D e sites montados em camadas, com prova curta, critérios de revisão e planejamento de render em máquinas limitadas. Preserva o briefing por rede, posts, Pins, carrosséis e produção de vídeo. São procedimentos e critérios de execução; não há modelo de segmentação ou cena 3D pronta incluídos. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
 
 O conteúdo é original e usa projetos públicos como referências de estudo, sem incorporar seus arquivos. Veja [fontes](skills/milweb-video-studio/references/sources.md) e [licenças de terceiros](THIRD_PARTY.md).
 

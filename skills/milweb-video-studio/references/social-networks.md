@@ -34,7 +34,7 @@ Perguntas possíveis:
 - “O público será brasileiro ou internacional?”
 - “Qual página deve receber quem clicar no Pin?”
 
-Recomendar formato visual depois de conhecer os materiais: imagem, composição de telas, sequência de Pins ou vídeo curto. Não obrigar o usuário a escolher tecnicamente. Pesquisar Pins, termos de busca e referências estéticas do nicho. Consultar especificações oficiais atuais antes de exportar; não inventar volume de buscas nem prometer tráfego duradouro.
+Para apresentar um site da MilWeb, priorizar imagem conceitual/editorial feita com capturas reais: mostrar design, tipografia e composição. Pode usar mockup ou cenário, preservando a interface do projeto. Recomendar imagem, composição de telas, sequência de Pins ou vídeo conforme materiais e pedido; não transformar automaticamente o Pin em vídeo. Não obrigar o usuário a escolher tecnicamente. Pesquisar Pins, termos de busca e referências estéticas do nicho. Consultar especificações oficiais atuais antes de exportar; não inventar volume de buscas nem prometer tráfego duradouro.
 
 Entregar conforme escopo: composição visual, título descritivo, descrição natural, board sugerido e URL de destino verificada ou campo explicitamente pendente. Usar idioma coerente com o público; propor boards como Travel Website Design, Motion & Interaction Design ou Web Design by MilWeb quando fizer sentido. Não usar “®” sem confirmação de registro.
 
@@ -55,7 +55,7 @@ Para Reels, aprofundar progressivamente a direção: apresentação limpa de tel
 
 Pesquisar Instagram e TikTok, priorizando referências compatíveis com o Instagram e seu público. Não assumir que humor, áudio ou montagem funcionam igualmente nos dois destinos. Usar provas reais e identificação de demo/conceito.
 
-Entregar conforme escopo: roteiro ou estrutura de slides, direção visual, legenda e CTA proporcional ao objetivo. Selecionar hashtags somente se úteis ao pedido, sem promessa de alcance.
+Entregar conforme escopo: roteiro ou estrutura de slides, direção visual, texto da publicação e CTA quando pertinente ao objetivo. Texto da publicação não autoriza inserir legendas ou títulos no vídeo. Selecionar hashtags somente se úteis ao pedido, sem promessa de alcance.
 
 ## TikTok — personalidade, humor e experimentos
 
@@ -72,8 +72,17 @@ Pesquisar TikTok e Instagram, verificando datas e sinais concretos antes de cham
 
 Entregar conforme escopo: premissa, gancho, progressão, encerramento e instruções de edição; sugerir áudio somente com fonte verificável e uso viável. Não presumir que toda peça precisa de narração, legenda, venda ou duração curta.
 
+## YouTube Shorts — descoberta e demonstração breve
+
+Tratar como quinto canal do pacote social, com uma ideia compreensível mesmo para quem nunca viu a MilWeb: resultado visual, microtutorial, bastidor ou descoberta técnica. Não simplesmente exportar o TikTok novamente.
+
+Perguntar somente o que faltar: “Quer destacar o resultado do site, ensinar uma técnica ou mostrar a transformação?” e, em outra rodada quando necessário, “A peça deve funcionar só pelas imagens ou terá explicação?”. Reutilizar escolhas de desktop/mobile, som e texto; não introduzir legendas ou narrador automaticamente.
+
+Pesquisar referências no próprio YouTube Shorts e usar outras redes como comparação identificada. Consultar requisitos atuais antes de exportar. Entregar premissa, progressão visual, demonstração real, encerramento e título/descrição se solicitados. Shorts pode compartilhar capturas do pacote sem compartilhar obrigatoriamente montagem ou música.
+
 ## Várias redes, indecisão e continuidade
 
+- Aplicar channel-agents.md para organizar os especialistas; vídeos longos seguem long-form.md em projeto próprio.
 - Se o usuário escolher várias redes, coletar projeto/objetivo uma vez e perguntar apenas pelas diferenças necessárias. Preparar versões próprias de texto, composição e CTA; não apenas redimensionar.
 - Se estiver indeciso, perguntar o objetivo principal e recomendar uma rede com base neste posicionamento, sem apresentar isso como garantia de resultado.
 - Se já houver briefing suficiente, pesquisar e executar o escopo autorizado. Não perguntar novamente a rede quando explicitamente fornecida.

@@ -177,3 +177,36 @@ com música instrumental discreta e sem texto além do nome do projeto.
 Mostre desktop desde o início, depois mobile; priorize hero e reservas legíveis.
 Tenho [capturas]. Escolha os detalhes restantes. Não renderize nem publique.
 ```
+
+## Um site, cinco entregas distintas
+
+```text
+/milweb-video-studio
+Quero um pacote do site [URL] para Pinterest, TikTok, Instagram, LinkedIn
+e YouTube Shorts. Pinterest deve mostrar o design numa imagem conceitual
+com a interface real. As outras redes devem ter propostas próprias.
+Coordene os especialistas disponíveis, reaproveite o briefing e faça somente
+as perguntas que faltam. Antes de capturar, combine a versão do site e o
+enquadramento; não adicione texto ou legendas sem combinar.
+Por enquanto, só pesquisa e plano, sem gerar mídia, gastar ou publicar.
+```
+
+## Atingir o padrão visual de uma referência
+
+```text
+/milweb-video-studio
+Use [vídeos anexos/URLs] como referência de qualidade para apresentar meu site.
+Primeiro diga o que conseguiu ver e ouvir. Estude os trechos relevantes,
+identifique composição, ritmo, movimentos e transições observáveis.
+Pergunte o que quero aproveitar e preservar. Converta a direção em plano
+executável e critérios para comparar uma amostra. Não gere nem renderize ainda.
+```
+
+## YouTube longo separado
+
+```text
+/milweb-video-studio
+Quero planejar um episódio de oito minutos sobre a criação de [projeto].
+Trate como projeto independente do pacote social, com briefing, pesquisa,
+narrativa e capítulos próprios. Não crie versões curtas automaticamente.
+```
