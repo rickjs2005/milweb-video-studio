@@ -1,45 +1,51 @@
 # MilWeb Video Studio
 
-Uma skill em português para escolher a rede social, conduzir um briefing progressivo e criar conteúdo: posts, Pins, carrosséis ou vídeos com pesquisa, direção, roteiro, geração de cenas, edição, áudio e revisão. Feita para **Claude Code** e outros agentes compatíveis com o formato `SKILL.md`.
+**English** | [Português](README.pt-BR.md)
 
-Serve tanto para um Reel de portfólio quanto para um tutorial longo, uma cena no Higgsfield ou uma correção pontual de montagem. O núcleo é independente de editor; os módulos orientam a escolha da ferramenta disponível.
+> **Type:** internal tool published as an open project — a skill (Markdown instructions + one Python media-audit script) for Claude Code. There is no web application or demo, so there is no presentation image.
 
-## O que ela faz
+A Portuguese-language skill that helps choose the social network, runs a progressive briefing and creates content: posts, Pins, carousels or videos with research, direction, script, scene generation, editing, audio and review. Built for **Claude Code** and other agents compatible with the `SKILL.md` format.
 
-- Pergunta a rede quando ela não foi informada e faz perguntas específicas aos poucos, sem repetir respostas.
-- Investiga intenção, estilo, referência, ritmo, áudio e forma de mostrar o site antes de roteirizar ou editar.
-- Separa vídeo vertical de captura mobile e respeita escolhas de enquadramento, legendas e texto, sem adições automáticas por rede.
-- Diagnostica o que não agradou e o que preservar antes de refazer um vídeo.
-- Coordena cinco especialistas: Pinterest, TikTok, Instagram, LinkedIn e YouTube Shorts, com briefing comum e propostas próprias.
-- Trata vídeos longos como projetos independentes, com pesquisa, roteiro e timeline próprios.
-- Estuda referências por trechos e compara amostras por critérios concretos, sem prometer superar um vídeo não verificado.
-- Pesquisa referências atuais e distingue tendência observada de ideia autoral.
-- Prioriza ideias e monta calendários conforme público, materiais, tempo e orçamento.
-- Analisa métricas sem confundir tempo médio com retenção ou atribuir causas sem evidência.
-- Adapta linguagem para Instagram, TikTok, LinkedIn, Pinterest, YouTube, Bilibili e outras redes.
-- Planeja roteiro, shot list, ritmo, transições e captura real de sites.
-- Prepara geração no Higgsfield com referências, continuidade, orçamento e limite de tentativas.
-- Planeja recorte de apresentador, cenários virtuais em camadas, animação 3D e sites sendo montados na tela.
-- Define uma prova curta do efeito de maior risco antes de renderizar uma produção complexa completa.
-- Orienta montagem com Remotion, FFmpeg, Higgsedit ou o editor do projeto.
-- Trabalha voz, trilha, SFX, legendas e revisão audiovisual.
-- Preserva duração e escolhas do briefing, inclusive cenas contemplativas longas.
+> The skill instructions, prompts and agent definitions are written in Portuguese (pt-BR). This README is an English summary; the [Portuguese README](README.pt-BR.md) is the reference text.
 
-**A skill não instala um editor, não fornece créditos e não cria conexão automática com Higgsfield.** O agente precisa ter as ferramentas correspondentes. Sem elas, ainda pode pesquisar, dirigir, roteirizar e preparar os prompts.
+It works for a portfolio Reel, a long tutorial, a Higgsfield scene or a one-off edit fix. The core is editor-agnostic; the modules guide the choice of whichever tool is available.
 
-## Instalar no Claude Code
+## What it does
 
-Com Node.js/npm, use o instalador de skills:
+- Asks for the network when it was not given and asks specific questions gradually, without repeating answered ones.
+- Investigates intent, style, reference, pacing, audio and how to show the website before scripting or editing.
+- Separates vertical video from mobile capture and respects framing, caption and text choices, with no automatic per-network additions.
+- Diagnoses what the user disliked and what to keep before redoing a video.
+- Coordinates five specialists: Pinterest, TikTok, Instagram, LinkedIn and YouTube Shorts, with a shared briefing and their own proposals.
+- Treats long videos as independent projects, with their own research, script and timeline.
+- Studies references by segment and compares samples on concrete criteria, without promising to beat an unverified video.
+- Researches current references and distinguishes observed trends from original ideas.
+- Prioritizes ideas and builds calendars according to audience, materials, time and budget.
+- Analyzes metrics without confusing average watch time with retention or attributing causes without evidence.
+- Adapts language for Instagram, TikTok, LinkedIn, Pinterest, YouTube, Bilibili and other networks.
+- Plans script, shot list, pacing, transitions and real website capture.
+- Prepares Higgsfield generation with references, continuity, budget and attempt limits.
+- Plans presenter cut-outs, layered virtual sets, 3D animation and websites being assembled on screen.
+- Defines a short proof of the riskiest effect before rendering a full complex production.
+- Guides editing with Remotion, FFmpeg, Higgsedit or the project's editor.
+- Handles voice, music, SFX, captions and audiovisual review.
+- Preserves duration and briefing choices, including long contemplative scenes.
+
+**The skill does not install an editor, does not provide credits and does not create an automatic connection to Higgsfield.** The agent needs the corresponding tools. Without them, it can still research, direct, script and prepare prompts.
+
+## Install in Claude Code
+
+With Node.js/npm, use the skills installer:
 
 ```bash
 npx skills add rickjs2005/milweb-video-studio --skill milweb-video-studio -a claude-code -g
 ```
 
-Revise as opções apresentadas. `-g` instala para uso nos seus projetos; sem essa opção, a instalação é local ao projeto. Confira se o Claude reconhece `/milweb-video-studio`. O instalador é uma ferramenta externa; veja sua [documentação](https://github.com/vercel-labs/skills).
+Review the options shown. `-g` installs for use across your projects; without it, the install is local to the project. Check that Claude recognizes `/milweb-video-studio`. The installer is an external tool; see its [documentation](https://github.com/vercel-labs/skills).
 
-### Alternativa manual no Windows / PowerShell
+### Manual alternative on Windows / PowerShell
 
-Na pasta onde você guarda seus repositórios:
+In the folder where you keep your repositories:
 
 ```powershell
 git clone https://github.com/rickjs2005/milweb-video-studio.git
@@ -50,7 +56,7 @@ New-Item -ItemType Directory -Force (Split-Path $skillTarget) | Out-Null
 Copy-Item -Recurse '.\milweb-video-studio\skills\milweb-video-studio' $skillTarget
 ```
 
-### Alternativa manual no macOS / Linux
+### Manual alternative on macOS / Linux
 
 ```bash
 git clone https://github.com/rickjs2005/milweb-video-studio.git
@@ -62,35 +68,35 @@ else
 fi
 ```
 
-Para uso somente em um projeto, coloque a pasta da skill em `.claude/skills/milweb-video-studio/` dentro dele. Não copie a raiz inteira do repositório para a pasta de skills. Abra uma nova sessão se ela ainda não aparecer. Consulte o formato na [documentação do Claude Code](https://code.claude.com/docs/en/skills).
+For a single project, place the skill folder at `.claude/skills/milweb-video-studio/` inside it. Do not copy the whole repository root into the skills folder. Open a new session if it does not show up yet. See the format in the [Claude Code documentation](https://code.claude.com/docs/en/skills).
 
-Se você já usa `milweb-video` ou `edicao-video-capcut`, mantenha os arquivos antigos enquanto compara as versões. Invoque esta skill pelo nome para testar; não é necessário apagar outras skills.
+If you already use `milweb-video` or `edicao-video-capcut`, keep the old files while you compare versions. Invoke this skill by name to test it; there is no need to delete other skills.
 
-## Escolha da rede e perguntas progressivas
+## Network choice and progressive questions
 
-Comece com `/milweb-video-studio Quero criar conteúdo de um site meu.`
+Start with `/milweb-video-studio Quero criar conteúdo de um site meu.` ("I want to create content about a website of mine.")
 
-Sem uma rede definida, a skill pergunta: **“Para qual rede vamos criar: LinkedIn, Pinterest, Instagram, TikTok ou YouTube Shorts?”** A escolha da rede é apenas o início. Para vídeo, investiga objetivo, público, estilo visual, referências, ritmo, apresentação do site, áudio e materiais, uma pergunta por vez ou duas relacionadas. As perguntas são adaptadas ao que realmente falta; um briefing completo ou escolhas delegadas permitem avançar diretamente. Se você já informou algo, ela não pergunta de novo. Outros destinos, como YouTube e sites, continuam disponíveis.
+Without a defined network, the skill asks which network to create for: LinkedIn, Pinterest, Instagram, TikTok or YouTube Shorts. Choosing the network is only the start. For video, it investigates goal, audience, visual style, references, pacing, website presentation, audio and materials, one question at a time or two related ones. Questions adapt to what is actually missing; a complete briefing or delegated choices let it move on directly. It does not ask again for anything already provided. Other destinations, such as YouTube and websites, remain available.
 
-| Rede | Posicionamento inicial para a MilWeb | Entregas possíveis |
+| Network | Initial positioning for MilWeb | Possible deliverables |
 |---|---|---|
-| LinkedIn | Autoridade e conexões profissionais | Case, aprendizado, post, documento/carrossel ou vídeo |
-| Pinterest | Portfólio visual e estética sofisticada | Pin, composição de telas, série visual ou vídeo |
-| Instagram | Confiança, projetos e contato comercial | Reel, carrossel, Stories e legenda |
-| TikTok | Personalidade, humor, bastidores e experimentos | Ideia, roteiro e vídeo adaptado ao público |
-| YouTube Shorts | Descoberta e demonstração breve | Short com uma ideia completa |
+| LinkedIn | Authority and professional connections | Case, lesson, post, document/carousel or video |
+| Pinterest | Visual portfolio and refined aesthetics | Pin, screen composition, visual series or video |
+| Instagram | Trust, projects and business contact | Reel, carousel, Stories and caption |
+| TikTok | Personality, humor, behind the scenes and experiments | Idea, script and audience-adapted video |
+| YouTube Shorts | Discovery and short demonstration | Short with one complete idea |
 
-São direções de marca, não garantias de desempenho. A pesquisa é adequada a cada destino: trends e formatos em Instagram/TikTok, discussões e cases no LinkedIn, buscas e referências visuais no Pinterest. Falta de acesso ou evidência deve ser declarada.
+These are brand directions, not performance guarantees. Research fits each destination: trends and formats on Instagram/TikTok, discussions and cases on LinkedIn, searches and visual references on Pinterest. Lack of access or evidence must be stated.
 
-As cinco especialidades compartilham a skill. YouTube longo segue um projeto independente. Conteúdo estático não exige produção de vídeo; pedidos de planejamento não autorizam publicação ou geração paga.
+The five specialties share the skill. Long-form YouTube follows an independent project. Static content does not require video production; planning requests do not authorize publishing or paid generation.
 
-## Agentes por rede no Claude Code
+## Per-network agents in Claude Code
 
-As definições estão em [.claude/agents](.claude/agents). São cinco agentes: `milweb-pinterest`, `milweb-tiktok`, `milweb-instagram`, `milweb-linkedin` e `milweb-youtube-shorts`. A skill principal coordena o briefing, as entregas e a revisão. Aciona apenas os canais pedidos, compartilha materiais e evita gravações/gastos duplicados.
+The definitions are in [.claude/agents](.claude/agents). There are five agents: `milweb-pinterest`, `milweb-tiktok`, `milweb-instagram`, `milweb-linkedin` and `milweb-youtube-shorts`. The main skill coordinates the briefing, deliverables and review. It triggers only the requested channels, shares materials and avoids duplicated recordings/spending.
 
-Instale a skill primeiro. Os arquivos de agentes precisam estar em `.claude/agents/` do projeto em que você usa Claude Code, ou em `~/.claude/agents/` para todos os projetos. O comando de instalação da skill acima não instala esses agentes automaticamente. Ao usar Claude Code na raiz deste repositório clonado, os arquivos já estão na localização de projeto; em outro projeto, copie os cinco arquivos para a pasta correspondente, preservando arquivos existentes.
+Install the skill first. The agent files must be in `.claude/agents/` of the project where you use Claude Code, or in `~/.claude/agents/` for all projects. The skill install command above does not install these agents automatically. When using Claude Code at the root of this cloned repository, the files are already in the project location; in another project, copy the five files to the matching folder, preserving existing files.
 
-No Windows, após clonar o repositório e abrir PowerShell na raiz dele, a cópia global pode ser feita assim:
+On Windows, after cloning the repository and opening PowerShell at its root, the global copy can be done like this:
 
 ```powershell
 $milwebAgentSource = Join-Path (Get-Location) '.claude\agents'
@@ -106,11 +112,11 @@ New-Item -ItemType Directory -Force $milwebAgentTarget | Out-Null
 $milwebAgentFiles | Copy-Item -Destination $milwebAgentTarget
 ```
 
-Essas instruções seguem a [documentação oficial de subagentes](https://code.claude.com/docs/en/sub-agents). Não incluem modelo fixo, permissões ampliadas ou publicação automática. A skill continua utilizável sem subagentes, aplicando os perfis sequencialmente e declarando esse modo. Instalação e execução no computador do usuário ainda precisam ser verificadas.
+These instructions follow the [official subagents documentation](https://code.claude.com/docs/en/sub-agents). They do not set a fixed model, expanded permissions or automatic publishing. The skill remains usable without subagents, applying the profiles sequentially and stating that mode. Installation and execution on the user's computer still need to be verified.
 
-## Primeiro teste, sem gastar créditos
+## First test, without spending credits
 
-No Claude Code:
+In Claude Code (the prompt is in Portuguese, like the skill):
 
 ```text
 /milweb-video-studio
@@ -123,60 +129,68 @@ Explique o que adaptar em cada rede e como avaliar o resultado.
 Nesta etapa, entregue apenas o plano. Não gere mídia nem use serviços pagos.
 ```
 
-Substitua os campos entre colchetes pelo seu contexto. A skill deve separar referências verificadas de hipóteses, propor uma timeline e respeitar os materiais disponíveis. Se não conseguir pesquisar uma rede, deve declarar a limitação. O teste não autoriza geração paga; o uso do agente continua sujeito ao seu plano. Veja outros [prompts de uso](examples/prompts.md) e os [critérios de avaliação](docs/validation.md).
+It asks for a 30–45 s plan for TikTok and Instagram Reels, with topic, audience and available materials, verified references, opening, scene-by-scene script, cuts, captions, audio and per-network adaptations — plan only, no media generation or paid services. Replace the bracketed fields with your context. The skill should separate verified references from hypotheses, propose a timeline and respect the available materials. If it cannot research a network, it should state the limitation. The test does not authorize paid generation; agent usage remains subject to your plan. See more [usage prompts](examples/prompts.md) and the [evaluation criteria](docs/validation.md) (both in Portuguese).
 
-Para um trabalho real, informe URL ou arquivos, objetivo, público, destino, duração e orçamento quando houver geração paga. Não envie tokens ou senhas no prompt.
+For real work, provide URL or files, goal, audience, destination, duration and budget when paid generation is involved. Do not put tokens or passwords in the prompt.
 
-## Módulos
+## Modules
 
-| Arquivo | Papel |
+| File | Role |
 |---|---|
-| [SKILL.md](skills/milweb-video-studio/SKILL.md) | Escopo, fluxo, seleção de módulos e critérios centrais |
-| `social-networks.md` | Escolha da rede, perguntas progressivas e cinco especialidades sociais |
-| `creative-brief.md` | Direção criativa antes da edição e diagnóstico de insatisfação |
-| `channel-agents.md` | Briefing comum, cinco especialistas e coordenação de execução |
-| `reference-study.md` | Análise de trechos, plano de efeitos e comparação de qualidade |
-| `long-form.md` | Episódios longos em projeto independente |
-| `research.md` | Pesquisa e qualidade de evidência |
-| `content-strategy.md` | Prioridades, formatos e calendário editorial |
-| `performance.md` | Métricas, hipóteses e testes de conteúdo |
-| `platforms.md` | Linguagem por destino e versões |
-| `direction.md` | Roteiro, ritmo e transições |
-| `footage.md` | Captura real e inventário de mídia |
-| `higgsfield.md` | Geração, continuidade e orçamento |
-| `compositing-vfx.md` | Recorte, camadas, cenários virtuais, 3D, construção de sites e prova curta |
-| `editing.md` | Montagem, motion e motores |
-| `audio.md` | Voz, música, efeitos e legendas |
-| `quality.md` | Revisão técnica, perceptiva e editorial |
-| `templates.md` | Briefing, shot list, fontes e QA |
-| `sources.md` | Documentação e projetos de referência |
+| [SKILL.md](skills/milweb-video-studio/SKILL.md) | Scope, flow, module selection and core criteria |
+| `social-networks.md` | Network choice, progressive questions and five social specialties |
+| `creative-brief.md` | Creative direction before editing and dissatisfaction diagnosis |
+| `channel-agents.md` | Shared briefing, five specialists and execution coordination |
+| `reference-study.md` | Segment analysis, effects plan and quality comparison |
+| `long-form.md` | Long episodes as independent projects |
+| `research.md` | Research and evidence quality |
+| `content-strategy.md` | Priorities, formats and editorial calendar |
+| `performance.md` | Metrics, hypotheses and content tests |
+| `platforms.md` | Per-destination language and versions |
+| `direction.md` | Script, pacing and transitions |
+| `footage.md` | Real capture and media inventory |
+| `higgsfield.md` | Generation, continuity and budget |
+| `compositing-vfx.md` | Cut-out, layers, virtual sets, 3D, website building and short proof |
+| `editing.md` | Editing, motion and engines |
+| `audio.md` | Voice, music, effects and captions |
+| `quality.md` | Technical, perceptual and editorial review |
+| `templates.md` | Briefing, shot list, sources and QA |
+| `sources.md` | Documentation and reference projects |
 
-Os módulos ficam em `skills/milweb-video-studio/references/` e são carregados conforme a tarefa. Não há instalação automática de dependências nem hooks.
+The modules live in `skills/milweb-video-studio/references/` and are loaded as the task requires. There is no automatic dependency installation and no hooks.
 
-## Verificação técnica opcional
+## Optional technical check
 
-O único script incluído lê metadados e pode decodificar um vídeo local. Requer **Python 3.10+**, **ffprobe** e, para `--decode`, **ffmpeg** no PATH.
+The only included script reads metadata and can decode a local video. It requires **Python 3.10+**, **ffprobe** and, for `--decode`, **ffmpeg** on PATH.
 
 ```bash
 python skills/milweb-video-studio/scripts/media_audit.py final.mp4 --min-duration 25 --require-audio --decode
 ```
 
-O resultado JSON não é aprovação estética: não confirma que a savana durou 25 segundos, que o som está bom ou que a transição funciona. Ele mede a duração global e verifica as condições técnicas solicitadas. Não altera a mídia e não usa a rede.
+The JSON result is not aesthetic approval: it does not confirm that the savanna lasted 25 seconds, that the sound is good or that the transition works. It measures the overall duration and checks the requested technical conditions. It does not modify the media and does not use the network.
 
-Para executar os testes locais, com os mesmos requisitos:
+To run the local tests, with the same requirements:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-## Escopo desta versão
+## Scope of this version
 
-Versão **0.6.0**: adiciona cinco definições de agentes por canal, coordenação com briefing comum, YouTube Shorts, fluxo independente para vídeos longos e estudo de referências com comparação de amostras. Preserva as regras de desktop/mobile, enquadramento e legendas. Mantém o fluxo de composição avançada para recorte, cenários virtuais, animação 2.5D/3D e sites montados em camadas, com prova curta, critérios de revisão e planejamento de render em máquinas limitadas. Preserva o briefing por rede, posts, Pins, carrosséis e produção de vídeo. São procedimentos e critérios de execução; não há modelo de segmentação ou cena 3D pronta incluídos. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
+Version **0.6.0** adds five per-channel agent definitions, coordination with a shared briefing, YouTube Shorts, an independent flow for long videos and reference study with sample comparison. It keeps the desktop/mobile, framing and caption rules, and the advanced compositing flow for cut-outs, virtual sets, 2.5D/3D animation and websites assembled in layers, with a short proof, review criteria and render planning on limited machines. It keeps per-network briefing, posts, Pins, carousels and video production. These are procedures and execution criteria; no segmentation model or ready-made 3D scene is included. The modules are editorial instructions, not an autonomous video engine. The paid Higgsfield integration and execution inside Claude Code need to be tested in the user's environment. There is no promise of going viral, a "perfect transition" or an automatic cinematic result.
 
-O conteúdo é original e usa projetos públicos como referências de estudo, sem incorporar seus arquivos. Veja [fontes](skills/milweb-video-studio/references/sources.md) e [licenças de terceiros](THIRD_PARTY.md).
+The content is original and uses public projects as study references, without bundling their files. See [sources](skills/milweb-video-studio/references/sources.md) and [third-party licenses](THIRD_PARTY.md).
 
-## Contribuir
+## Contributing
 
-Abra uma issue com briefing anonimizado, comportamento observado, resultado desejado e versões das ferramentas. Para propor uma regra, explique seu contexto e exceções. Não envie vídeos privados, credenciais ou conteúdo de clientes sem autorização.
+Open an issue with an anonymized briefing, observed behavior, desired result and tool versions. To propose a rule, explain its context and exceptions. Do not send private videos, credentials or client content without authorization. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Licença [MIT](LICENSE) para os arquivos deste repositório. Serviços, ferramentas, modelos e mídias usados com a skill têm condições próprias. Projeto independente da MilWeb; não é produto oficial da Anthropic, OpenAI, Remotion ou Higgsfield.
+The script tests run on GitHub Actions ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)) with Python 3.13 and FFmpeg.
+
+## Security
+
+Do not open public issues for security problems. See [SECURITY.md](SECURITY.md).
+
+## License
+
+[MIT](LICENSE) license for the files in this repository. Services, tools, models and media used with the skill have their own terms. Independent MilWeb project; not an official product of Anthropic, OpenAI, Remotion or Higgsfield.
