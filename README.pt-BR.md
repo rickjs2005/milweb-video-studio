@@ -2,11 +2,27 @@
 
 [English](README.md) | **Português**
 
-> **Tipo:** ferramenta interna publicada como projeto aberto — skill (instruções Markdown + um script Python de auditoria de mídia) para Claude Code. Não há aplicação web nem demo; por isso não há imagem de apresentação.
+> **Tipo:** skill em português com análise local de referências, projetos de vídeo editáveis em HyperFrames, verificações FFmpeg e voz/legendas locais opcionais.
 
 Uma skill em português para escolher a rede social, conduzir um briefing progressivo e criar conteúdo: posts, Pins, carrosséis ou vídeos com pesquisa, direção, roteiro, geração de cenas, edição, áudio e revisão. Feita para **Claude Code** e outros agentes compatíveis com o formato `SKILL.md`.
 
 Serve tanto para um Reel de portfólio quanto para um tutorial longo, uma cena no Higgsfield ou uma correção pontual de montagem. O núcleo é independente de editor; os módulos orientam a escolha da ferramenta disponível.
+
+## Vídeo por referência — v0.7.0
+
+Envie um vídeo e seu novo conteúdo. O agente analisa a referência, adapta a linguagem visual, constrói a composição editável e executa as ferramentas locais. Veja [o fluxo de produção](skills/milweb-video-studio/references/reference-production.md). Os scripts não exigem APIs pagas de IA; o uso do agente continua sujeito ao seu plano.
+
+```bash
+python skills/milweb-video-studio/scripts/studio.py doctor
+python skills/milweb-video-studio/scripts/studio.py new videos/demo --demo
+npm --prefix videos/demo install
+node videos/demo/node_modules/hyperframes/bin/hyperframes.mjs browser ensure
+python skills/milweb-video-studio/scripts/studio.py render videos/demo
+```
+
+O demo é um teste sintético explícito, não recriação automática de vídeo não inspecionado. Editar as cenas em `composition.html.in`; `index.html` é gerado. Voz e ASR opcionais usam modelos locais de Kokoro ONNX/faster-whisper.
+
+As dependências têm licenças diferentes: GSAP usa licença própria, portanto o conjunto não deve ser apresentado como 100% open source. Consulte [THIRD_PARTY.md](THIRD_PARTY.md) e os [resultados de validação](docs/validation.md).
 
 ## O que ela faz
 
@@ -159,7 +175,7 @@ Os módulos ficam em `skills/milweb-video-studio/references/` e são carregados 
 
 ## Verificação técnica opcional
 
-O único script incluído lê metadados e pode decodificar um vídeo local. Requer **Python 3.10+**, **ffprobe** e, para `--decode`, **ffmpeg** no PATH.
+O script media_audit.py lê metadados e pode decodificar um vídeo local. Requer **Python 3.10+**, **ffprobe** e, para `--decode`, **ffmpeg** no PATH.
 
 ```bash
 python skills/milweb-video-studio/scripts/media_audit.py final.mp4 --min-duration 25 --require-audio --decode
@@ -175,7 +191,7 @@ python -m unittest discover -s tests -v
 
 ## Escopo desta versão
 
-Versão **0.6.0**: adiciona cinco definições de agentes por canal, coordenação com briefing comum, YouTube Shorts, fluxo independente para vídeos longos e estudo de referências com comparação de amostras. Preserva as regras de desktop/mobile, enquadramento e legendas. Mantém o fluxo de composição avançada para recorte, cenários virtuais, animação 2.5D/3D e sites montados em camadas, com prova curta, critérios de revisão e planejamento de render em máquinas limitadas. Preserva o briefing por rede, posts, Pins, carrosséis e produção de vídeo. São procedimentos e critérios de execução; não há modelo de segmentação ou cena 3D pronta incluídos. Os módulos são instruções editoriais, não um motor autônomo de vídeo. A integração paga com Higgsfield e a execução dentro do Claude Code precisam ser testadas no ambiente do usuário. Não há promessa de viralização, “transição perfeita” ou resultado cinematográfico automático.
+Versão **0.7.0**: adiciona ferramentas executáveis para vídeo por referência: análise de eventos visuais e folhas de contato, projeto HyperFrames editável, snapshots/render, comparação por mapa de cenas, decode/loudness, TTS Kokoro ONNX opcional, transcrição faster-whisper e legendas embutidas por FFmpeg. Mantém os módulos sociais e os cinco agentes por canal. A adaptação visual e a revisão continuam sendo trabalho do agente; checks técnicos não comprovam fidelidade a uma referência inacessível. Dependências de navegador/HyperFrames e modelos de voz são instalados separadamente. Produção paga pelo Higgsfield permanece opcional e separada.
 
 O conteúdo é original e usa projetos públicos como referências de estudo, sem incorporar seus arquivos. Veja [fontes](skills/milweb-video-studio/references/sources.md) e [licenças de terceiros](THIRD_PARTY.md).
 

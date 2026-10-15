@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Video project</title>
+<script src="./node_modules/gsap/dist/gsap.min.js"></script>
+<style>@font-face{font-family:'Studio Sans';font-style:normal;font-weight:100 900;font-display:block;src:url('./node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2') format('woff2')}body{margin:0;background:#10131b;color:#fff;font-family:'Studio Sans'}#root{position:relative;width:100%;height:100%;overflow:hidden}.clip{position:absolute;inset:0}</style></head>
+<body><div id="root" data-composition-id="main" data-start="0" data-width="{{WIDTH}}" data-height="{{HEIGHT}}" data-fps="{{FPS}}" data-duration="{{DURATION}}">
+<section id="scene-1" class="clip" data-start="0" data-duration="{{DURATION}}"><!-- MILWEB_UNAUTHORED_SCAFFOLD: replace this marker and author the reference-specific scene. --></section></div>
+<script id="content" type="application/json">{{CONTENT}}</script>
+<script>const content=JSON.parse(document.getElementById('content').textContent);const tl=gsap.timeline({paused:true});window.__timelines['main']=tl;</script>
+</body></html>

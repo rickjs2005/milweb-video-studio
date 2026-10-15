@@ -2,13 +2,29 @@
 
 **English** | [Português](README.pt-BR.md)
 
-> **Type:** internal tool published as an open project — a skill (Markdown instructions + one Python media-audit script) for Claude Code. There is no web application or demo, so there is no presentation image.
+> **Type:** a Portuguese-language agent skill with local reference analysis, editable HyperFrames video projects, FFmpeg quality checks and optional local speech/subtitles.
 
 A Portuguese-language skill that helps choose the social network, runs a progressive briefing and creates content: posts, Pins, carousels or videos with research, direction, script, scene generation, editing, audio and review. Built for **Claude Code** and other agents compatible with the `SKILL.md` format.
 
 > The skill instructions, prompts and agent definitions are written in Portuguese (pt-BR). This README is an English summary; the [Portuguese README](README.pt-BR.md) is the reference text.
 
 It works for a portfolio Reel, a long tutorial, a Higgsfield scene or a one-off edit fix. The core is editor-agnostic; the modules guide the choice of whichever tool is available.
+
+## Video from a reference — v0.7.0
+
+Send a reference video and your new content. The agent inspects the reference, maps its visual language to the new piece, authors an editable composition and runs the local tools. See [the production workflow](skills/milweb-video-studio/references/reference-production.md). The toolchain does not require paid AI APIs; the coding agent still uses your plan.
+
+```bash
+python skills/milweb-video-studio/scripts/studio.py doctor
+python skills/milweb-video-studio/scripts/studio.py new videos/demo --demo
+npm --prefix videos/demo install
+node videos/demo/node_modules/hyperframes/bin/hyperframes.mjs browser ensure
+python skills/milweb-video-studio/scripts/studio.py render videos/demo
+```
+
+The demo is an explicit synthetic fixture, not an automatic recreation of an unseen video. Author project scenes in `composition.html.in`; `index.html` is generated. Optional speech uses local Kokoro ONNX/faster-whisper models.
+
+Dependencies have different licenses: GSAP uses its own license, so this toolchain should not be described as 100% open source. See [THIRD_PARTY.md](THIRD_PARTY.md) and the [validation record](docs/validation.md).
 
 ## What it does
 
@@ -161,7 +177,7 @@ The modules live in `skills/milweb-video-studio/references/` and are loaded as t
 
 ## Optional technical check
 
-The only included script reads metadata and can decode a local video. It requires **Python 3.10+**, **ffprobe** and, for `--decode`, **ffmpeg** on PATH.
+The media_audit.py script reads metadata and can decode a local video. It requires **Python 3.10+**, **ffprobe** and, for `--decode`, **ffmpeg** on PATH.
 
 ```bash
 python skills/milweb-video-studio/scripts/media_audit.py final.mp4 --min-duration 25 --require-audio --decode
@@ -177,7 +193,7 @@ python -m unittest discover -s tests -v
 
 ## Scope of this version
 
-Version **0.6.0** adds five per-channel agent definitions, coordination with a shared briefing, YouTube Shorts, an independent flow for long videos and reference study with sample comparison. It keeps the desktop/mobile, framing and caption rules, and the advanced compositing flow for cut-outs, virtual sets, 2.5D/3D animation and websites assembled in layers, with a short proof, review criteria and render planning on limited machines. It keeps per-network briefing, posts, Pins, carousels and video production. These are procedures and execution criteria; no segmentation model or ready-made 3D scene is included. The modules are editorial instructions, not an autonomous video engine. The paid Higgsfield integration and execution inside Claude Code need to be tested in the user's environment. There is no promise of going viral, a "perfect transition" or an automatic cinematic result.
+Version **0.7.0** adds executable reference-video tooling: visual-event analysis and contact sheets, a local editable HyperFrames project, snapshots/render, scene-map comparison, decode/loudness checks, optional Kokoro ONNX TTS, faster-whisper transcription and FFmpeg subtitle burn-in. It retains the social/content modules and five channel agents. The agent remains responsible for visual adaptation and review; technical checks do not establish fidelity to an inaccessible reference. HyperFrames/browser dependencies and speech models are installed separately. Paid Higgsfield production is still optional and separate.
 
 The content is original and uses public projects as study references, without bundling their files. See [sources](skills/milweb-video-studio/references/sources.md) and [third-party licenses](THIRD_PARTY.md).
 

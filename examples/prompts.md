@@ -2,6 +2,17 @@
 
 Substitua os campos entre colchetes por material real. Os exemplos não concedem acesso a contas nem incluem mídia.
 
+## Produzir a partir de uma referência
+
+```text
+/milweb-video-studio
+Crie um vídeo com a linguagem visual de [referencia.mp4], usando [meu conteúdo/pasta].
+Analise a mídia real, adapte composição, movimentos, ritmo e áudio ao meu conteúdo
+e entregue MP4 e projeto editável. Use ferramentas locais, sem APIs pagas.
+```
+
+A referência atual governa o estilo. A skill deve executar análise, construção, render e revisão; não entregar somente roteiro ou prompt. Quando faltar apenas um conteúdo essencial, pedir esse conteúdo sem repetir escolhas já definidas pelo vídeo.
+
 ## Pesquisa para portfólio
 
 ```text

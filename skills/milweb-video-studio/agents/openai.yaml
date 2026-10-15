@@ -1,4 +1,4 @@
 interface:
   display_name: "MilWeb Video Studio"
-  short_description: "Conteúdo social, composição em camadas e edição de vídeo"
-  default_prompt: "Use $milweb-video-studio para planejar e produzir meu conteúdo com camadas e efeitos adequados ao briefing, materiais e orçamento."
+  short_description: "Vídeo por referência, motion, voz e legendas locais"
+  default_prompt: "Use $milweb-video-studio para analisar meu vídeo de referência, adaptar a linguagem ao meu conteúdo e entregar um vídeo renderizado com projeto editável e revisão verificável."

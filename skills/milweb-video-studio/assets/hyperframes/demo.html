@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>MilWeb · Motion study</title>
+<script src="./node_modules/gsap/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:'Studio Sans';font-style:normal;font-weight:100 900;font-display:block;src:url('./node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2') format('woff2')}
+*{box-sizing:border-box}body{margin:0;background:#10121a;color:#f7f7f1;font-family:'Studio Sans'}
+#root{position:relative;width:100%;height:100%;overflow:hidden;background:#10121a;--accent:#c9f56b;--u:calc({{WIDTH}}px / 1080)}
+.clip{position:absolute;inset:0}.world{position:absolute;inset:0;perspective:1800px;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(calc(90 * var(--u)));opacity:.42}.orb.a{width:95%;height:52%;background:#3c366d;left:32%;top:17%}.orb.b{width:62%;height:37%;background:#264c63;left:-24%;top:52%}
+.grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px);background-size:calc(90 * var(--u)) calc(90 * var(--u));opacity:.55}
+.top{position:absolute;left:8%;right:8%;top:6.7%;display:flex;align-items:center;justify-content:space-between;font-size:calc(23 * var(--u));letter-spacing:.13em;color:#a7acbc}.brand{font-weight:760;color:#f8f9ef;letter-spacing:.17em}.status{display:flex;align-items:center;gap:calc(14 * var(--u))}.dot{width:calc(9 * var(--u));height:calc(9 * var(--u));background:var(--accent);border-radius:50%}
+.intro{position:absolute;left:8%;right:8%;top:14.5%;z-index:4}.eyebrow{font-size:calc(22 * var(--u));letter-spacing:.2em;color:var(--accent);margin:0 0 calc(28 * var(--u))}.line{overflow:hidden}.intro h1{font-size:calc(100 * var(--u));line-height:1.04;letter-spacing:-.07em;margin:0;font-weight:690}.intro .line:last-child{color:#a9b0c0}.intro .small{font-size:calc(26 * var(--u));color:#a4abba;margin:calc(30 * var(--u)) 0 0;letter-spacing:-.01em}
+.card-wrap{position:absolute;left:10%;top:40.5%;width:80%;height:38%;z-index:3;transform-style:preserve-3d}
+.card{position:absolute;inset:0;background:linear-gradient(120deg,#ffffff24,#ffffff0b 55%,#ffffff14);backdrop-filter:blur(calc(26 * var(--u)));border:1px solid #ffffff30;border-radius:calc(38 * var(--u));box-shadow:0 calc(55 * var(--u)) calc(110 * var(--u)) #0006,inset 0 1px #ffffff55;overflow:hidden;padding:calc(36 * var(--u))}
+.card-header{display:flex;align-items:center;gap:calc(18 * var(--u));height:12%}.avatar{height:calc(50 * var(--u));width:calc(50 * var(--u));border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#152017;font-size:calc(23 * var(--u));font-weight:750}.card-name{font-size:calc(22 * var(--u));font-weight:620}.card-sub{font-size:calc(16 * var(--u));color:#aeb4c5}.dots{margin-left:auto;font-size:calc(30 * var(--u));color:#b7b9c9}
+.product-title{font-size:calc(34 * var(--u));letter-spacing:-.035em;margin:calc(20 * var(--u)) 0 calc(22 * var(--u));font-weight:650}
+.tiles{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:calc(14 * var(--u));height:58%;perspective:900px}.tile{position:relative;border-radius:calc(20 * var(--u));overflow:hidden;background:#d0c6b5}.tile.main{grid-row:span 2;background:linear-gradient(135deg,#eee5ce,#a0a999)}.tile.second{background:linear-gradient(130deg,#c5cced,#7f90b7)}.tile.third{background:linear-gradient(130deg,#d9bfcd,#896b91)}
+.tile:after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,#fff5,transparent 50%,#0001)}
+.sculpture{position:absolute;width:53%;height:53%;left:24%;top:24%;border-radius:50%;border:calc(37 * var(--u)) solid #f2ecda;box-shadow:inset calc(-14 * var(--u)) calc(10 * var(--u)) calc(18 * var(--u)) #78776588,calc(20 * var(--u)) calc(27 * var(--u)) calc(25 * var(--u)) #454e4655}
+.sphere{position:absolute;width:48%;aspect-ratio:1;left:28%;top:13%;border-radius:50%;background:radial-gradient(circle at 30% 22%,#fbfdff,#acb9d9 42%,#425f8f 100%);box-shadow:calc(10 * var(--u)) calc(20 * var(--u)) calc(25 * var(--u)) #39486c55}
+.arch{position:absolute;width:43%;height:65%;left:29%;top:15%;border-radius:48% 48% 8% 8%;background:linear-gradient(110deg,#f7e3e8,#c4a5c4 56%,#7b5a84);box-shadow:calc(13 * var(--u)) calc(13 * var(--u)) calc(18 * var(--u)) #5b3e6755}
+.chip-row{display:flex;align-items:center;gap:calc(10 * var(--u));margin-top:calc(22 * var(--u))}.pill{border:1px solid #ffffff25;border-radius:999px;padding:calc(9 * var(--u)) calc(16 * var(--u));font-size:calc(16 * var(--u));background:#ffffff09}.publish{margin-left:auto;border-radius:999px;background:var(--accent);color:#182016;padding:calc(11 * var(--u)) calc(22 * var(--u));font-size:calc(17 * var(--u));font-weight:650}
+.cursor{position:absolute;width:calc(37 * var(--u));height:calc(47 * var(--u));right:5%;bottom:4%;z-index:8;filter:drop-shadow(0 3px 4px #0008)}
+.ring{position:absolute;right:4%;bottom:4%;width:calc(80 * var(--u));height:calc(80 * var(--u));border:2px solid var(--accent);border-radius:50%}
+.detail-card{position:absolute;left:24%;top:83%;width:68%;padding:calc(29 * var(--u));border-radius:calc(26 * var(--u));background:#e9f1d6;color:#1b241b;box-shadow:0 25px 80px #0005;z-index:6}.detail-label{font-size:calc(17 * var(--u));letter-spacing:.13em;color:#4a6048}.detail-text{font-size:calc(35 * var(--u));line-height:1.17;letter-spacing:-.04em;font-weight:650;margin-top:calc(12 * var(--u))}
+.footer{position:absolute;left:8%;right:8%;bottom:6.5%;display:flex;justify-content:space-between;align-items:center;color:#929bad;font-size:calc(20 * var(--u));letter-spacing:.02em}.progress{width:35%;height:2px;background:#ffffff22;overflow:hidden}.progress span{display:block;height:100%;background:var(--accent);transform-origin:left}
+.end{position:absolute;inset:0;z-index:9;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:calc(30 * var(--u));background:radial-gradient(ellipse at 50% 45%,#282e39,#10121a 68%)}.end .mark{width:calc(118 * var(--u));height:calc(118 * var(--u));border-radius:calc(30 * var(--u));background:var(--accent);color:#1a2118;display:grid;place-items:center;font-weight:750;font-size:calc(58 * var(--u));box-shadow:0 0 100px #c9f51b19}.end h2{font-size:calc(74 * var(--u));letter-spacing:-.065em;margin:0;font-weight:650}.end p{font-size:calc(26 * var(--u));color:#a6afbd;margin:0;max-width:80%;text-align:center}.end .rule{height:1px;background:#ffffff25;width:calc(180 * var(--u));margin:calc(14 * var(--u)) 0}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-width="{{WIDTH}}" data-height="{{HEIGHT}}" data-fps="{{FPS}}" data-duration="{{DURATION}}">
+<section id="main-scene" class="clip" data-start="0" data-duration="8.05"><div class="world">
+<div class="grid"></div><div class="orb a"></div><div class="orb b"></div>
+<div class="top"><span class="brand" id="brand"></span><span class="status"><span class="dot"></span>MOTION STUDY / 01</span></div>
+<div class="intro"><p class="eyebrow" id="eyebrow"></p><div class="line"><h1 id="headline1"></h1></div><div class="line"><h1 id="headline2"></h1></div><p class="small">Uma nova forma de mostrar suas ideias.</p></div>
+<div class="card-wrap"><div class="card"><div class="card-header"><div class="avatar">S</div><div><div class="card-name">Seu conteúdo</div><div class="card-sub">Uma identidade em cada detalhe</div></div><div class="dots">···</div></div><div class="product-title" id="product"></div>
+<div class="tiles"><div class="tile main"><div class="sculpture"></div></div><div class="tile second"><div class="sphere"></div></div><div class="tile third"><div class="arch"></div></div></div>
+<div class="chip-row"><span class="pill">Imagem</span><span class="pill">Coleção</span><span class="pill">Identidade</span><span class="publish">Apresentar ↗</span></div>
+<div class="ring"></div><svg class="cursor" viewBox="0 0 32 42"><path d="M3 2L27 23L17 25L12 38L6 35L11 23L2 22Z" fill="#f7f9ef" stroke="#10141c" stroke-width="2"/></svg></div></div>
+<div class="detail-card"><div class="detail-label">DO CONTEÚDO À APRESENTAÇÃO</div><div class="detail-text" id="detail"></div></div>
+<div class="footer"><span>Identidade em cada detalhe</span><div class="progress"><span></span></div><span>01 — 03</span></div>
+</div></section><section id="end-scene" class="clip" data-start="7.3" data-duration="2.7"><div class="end"><div class="mark">↗</div><h2 id="end-brand"></h2><div class="rule"></div><p id="cta"></p></div>
+</section><audio id="demo-audio" src="assets/demo.wav" data-start="0" data-duration="{{DURATION}}" data-volume="0.8"></audio></div>
+<script id="content" type="application/json">{{CONTENT}}</script>
+<script>
+const content=JSON.parse(document.getElementById('content').textContent);
+const put=(id,value)=>document.getElementById(id).textContent=value||'';
+put('brand',content.brand);put('end-brand',content.brand);put('eyebrow',content.eyebrow);put('product',content.product);put('detail',content.detail);put('cta',content.cta);
+const lines=(content.headline||'').split('\n');put('headline1',lines[0]);put('headline2',lines.slice(1).join(' '));
+if(/^#[0-9a-f]{6}$/i.test(content.accent||''))document.getElementById('root').style.setProperty('--accent',content.accent);
+const tl=gsap.timeline({paused:true});
+tl.fromTo('.orb.a',{x:0,y:0},{x:-90,y:50,duration:9,ease:'sine.inOut'},0);
+tl.fromTo('.orb.b',{x:0,y:0},{x:100,y:-70,duration:9,ease:'sine.inOut'},0);
+tl.fromTo('.top',{y:14,opacity:0},{y:0,opacity:1,duration:.7,ease:'power3.out'},0);
+tl.fromTo('.eyebrow',{y:22,opacity:0},{y:0,opacity:1,duration:.6,ease:'power3.out'},.15);
+tl.fromTo('.line h1',{yPercent:115},{yPercent:0,stagger:.13,duration:1,ease:'power4.out'},.25);
+tl.fromTo('.small',{y:14,opacity:0},{y:0,opacity:1,duration:.6,ease:'power3.out'},.75);
+tl.fromTo('.card-wrap',{y:170,rotationX:18,rotationY:-12,rotationZ:-6,scale:.88,opacity:0},{y:0,rotationX:4,rotationY:-5,rotationZ:-2,scale:1,opacity:1,duration:1.3,ease:'power4.out'},.9);
+tl.fromTo('.card-header',{y:15,opacity:0},{y:0,opacity:1,duration:.5,ease:'power3.out'},1.25);
+tl.fromTo('.product-title',{y:20,opacity:0},{y:0,opacity:1,duration:.6,ease:'power3.out'},1.45);
+tl.fromTo('.tile',{y:80,rotationX:14,opacity:0},{y:0,rotationX:0,opacity:1,duration:.8,stagger:.16,ease:'power4.out'},1.65);
+tl.fromTo('.pill',{y:20,scale:.85,opacity:0},{y:0,scale:1,opacity:1,duration:.55,stagger:.1,ease:'back.out(1.2)'},2.25);
+tl.fromTo('.publish',{scale:.9,opacity:0},{scale:1,opacity:1,duration:.5,ease:'power3.out'},2.5);
+tl.fromTo('.cursor',{x:110,y:90,opacity:0},{x:0,y:0,opacity:1,duration:.8,ease:'power3.out'},2.65);
+tl.fromTo('.ring',{scale:.2,opacity:0},{scale:1.7,opacity:0,keyframes:[{opacity:.7,duration:.05},{opacity:0,duration:.6}],duration:.65,ease:'power2.out'},3.6);
+tl.to('.publish',{scale:.93,duration:.12,ease:'power2.inOut'},3.6).to('.publish',{scale:1,duration:.25,ease:'power2.out'},3.72);
+tl.fromTo('.detail-card',{y:95,x:40,rotationZ:3,scale:.93,opacity:0},{y:0,x:0,rotationZ:0,scale:1,opacity:1,duration:1,ease:'power4.out'},3.85);
+tl.to('.card-wrap',{y:-32,rotationX:-3,rotationY:5,rotationZ:1.5,scale:1.03,duration:2.2,ease:'sine.inOut'},4.1);
+tl.fromTo('.sculpture',{rotationZ:0},{rotationZ:18,duration:4,ease:'sine.inOut'},2.1);
+tl.fromTo('.sphere',{y:0},{y:-12,duration:3,ease:'sine.inOut'},2.2);
+tl.fromTo('.progress span',{scaleX:0},{scaleX:1,duration:7.5,ease:'none'},.1);
+tl.fromTo('.end',{opacity:0},{opacity:1,duration:.75,ease:'power2.inOut'},7.3);
+tl.fromTo('.end .mark',{y:40,rotationZ:-12,scale:.7,opacity:0},{y:0,rotationZ:0,scale:1,opacity:1,duration:1,ease:'power4.out'},7.5);
+tl.fromTo('.end h2,.end .rule,.end p',{y:25,opacity:0},{y:0,opacity:1,stagger:.12,duration:.7,ease:'power3.out'},7.8);
+window.__timelines['main']=tl;
+</script></body></html>

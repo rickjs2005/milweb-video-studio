@@ -1,11 +1,21 @@
 ---
 name: milweb-video-studio
-description: "Pesquisar referências e tendências, planejar conteúdo e calendários, dirigir, roteirizar, gerar e editar vídeos ou executar ajustes pontuais. Coordenar agentes de LinkedIn, Pinterest, Instagram, TikTok e YouTube Shorts; tratar vídeos longos como projetos independentes. Conduzir briefing criativo progressivo: objetivo, estilo, referência, ritmo, áudio e apresentação do site; diagnosticar insatisfação sem repetir respostas. Usar para posts, Pins, carrosséis, Reels, TikTok, LinkedIn, YouTube, Bilibili, sites e produtos, Higgsfield, transições, motion, composição em camadas, recorte de apresentador, cenários virtuais, 3D, construção visual de sites, Remotion, áudio, legendas, revisão e análise de métricas. Atender também pedidos só de pesquisa, roteiro ou prompts sem iniciar geração. Adaptar duração e linguagem ao briefing e às ferramentas disponíveis."
+description: "Criar e editar vídeos por referência: receber um vídeo e novo conteúdo, analisar composição, movimento, ritmo e áudio, adaptar cenas, renderizar projeto editável e comparar resultados. Executar análise local, HyperFrames/Remotion/FFmpeg, voz e legendas opcionais. Também pesquisar tendências, planejar conteúdo, dirigir, roteirizar, gerar cenas e coordenar LinkedIn, Pinterest, Instagram, TikTok e YouTube Shorts; tratar vídeos longos como projetos independentes. Usar para recriar animações, motion graphics, apresentações para clientes, vídeos de produtos/sites e conteúdo de qualquer tema. Atender pedidos só de análise, roteiro ou prompts no escopo solicitado, sem iniciar produção."
 ---
 
 # MilWeb Video Studio
 
 Atuar com critério de direção e edição profissional: justificar decisões pelo que o espectador deve perceber, compreender e sentir. Não alegar experiência pessoal, anos de carreira ou resultados que não existam. Responder no idioma do usuário.
+
+## 0. Vídeo de referência como entrada principal
+
+Quando o pedido for criar algo como um vídeo enviado, ler [reference-production.md](references/reference-production.md) e executar esse fluxo. A referência atual orienta linguagem, ritmo e elementos; não reabrir o briefing como se ela não existisse. Perguntar somente por conteúdo novo essencial ausente ou conflito que mude a entrega. Não impor uma rede social antes de analisar a referência quando o pedido já define o vídeo desejado.
+
+Usar `scripts/studio.py`: diagnóstico, projeto, download opcional, análise, render, snapshots, comparação e auditoria. Usar `scripts/speech.py` para voz local, transcrição e legendas quando aplicáveis. Executar as ferramentas e inspecionar as saídas; não encerrar uma produção autorizada com um plano ou prompt. Os scripts ajudam a executar; a análise estética e a adaptação continuam sendo trabalho do agente.
+
+Usar decisões desta produção. Não transformar preferências históricas de silêncio, legenda, duração, branding ou desktop/mobile em proibições permanentes. Pedido de vídeo semelhante autoriza adaptar a linguagem solicitada; não remove requisitos explícitos atuais nem autoriza clonar a identidade de uma voz sem consentimento.
+
+Em pedidos para implementar ou testar a skill, continuar as partes independentes de material inacessível. Identificar a demonstração como teste técnico e manter a fidelidade à referência pendente até inspeção real.
 
 ## 1. Identificar a entrega e as restrições
 
@@ -30,6 +40,7 @@ Verificar as capacidades reais: arquivos acessíveis, navegador/captura, busca, 
 
 | Trabalho | Referência a ler |
 |---|---|
+| Recriar um vídeo com novo conteúdo; executar análise/render local | [reference-production.md](references/reference-production.md) |
 | Escolha da rede, perguntas progressivas e posicionamento por canal | [social-networks.md](references/social-networks.md) |
 | Vídeo novo, direção indefinida ou resultado que não agradou | [creative-brief.md](references/creative-brief.md) |
 | Agentes por canal e reaproveitamento de um projeto | [channel-agents.md](references/channel-agents.md) |
@@ -74,6 +85,7 @@ Não inserir confirmações entre etapas reversíveis já autorizadas. Continuar
 - Preservar pausas, planos contemplativos e silêncio intencional. Uma cena longa pode evoluir em ação, composição, som ou descoberta sem receber corte artificial.
 - Avaliar transições pelos quadros reais de saída e entrada. Desfoque para ocultar um corte não comprova continuidade espacial.
 - Usar TTS, voz humana ou ausência de voz conforme o projeto; não declarar TTS um erro universal. Nunca entregar trilha/voz provisória como final.
+- No modo por referência, preservar as características que o pedido atual adota e registrar as adaptações; não retirar áudio ou texto somente por escolhas feitas em outros projetos.
 - Adaptar narrativa, recorte, legendas e CTA por rede. Não apenas redimensionar a mesma peça.
 - Não prometer viralização, qualidade perfeita ou adequação de licença sem evidência. Separar referência observada, hipótese criativa e regra oficial.
 - Preservar originais e não sobrescrever arquivos do usuário. Não alterar sites ou produtos para facilitar a filmagem sem autorização para essa alteração.

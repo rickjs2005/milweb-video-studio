@@ -1,5 +1,19 @@
 # Histórico de validação
 
+## Versão 0.7.0 — 15/10/2026
+
+Fluxo executável para análise local, composição por referência, render HyperFrames, comparação, voz local, ASR e legendas. Esta revisão gerou arquivos de vídeo reais, além de atualizar as instruções.
+
+- Validador estrutural da skill aprovado; metadados regenerados pelo gerador oficial. `python -m unittest discover -s tests -v`: **17 testes aprovados**, sem rede/modelos nos testes de integração.
+- Testes cobrem preservação dos originais/anotações, acentos/espaços, injeção de conteúdo como JSON, bloqueio de escape de template e de render vazio, decode/loudness, proporções distintas, legendas queimadas com escala correta em retrato e regressão de fps inteiro/fracionário.
+- Demo original de motion: **10,000 s, 1080×1920, 30 fps, H.264, áudio AAC**. Render final em Linux, GPU por software, 1 worker: 58,3 s, com fonte local; não é previsão de desempenho em outro computador. Check: zero erros em lint/runtime/layout/motion/contraste; dois avisos de estrutura monolítica das cenas.
+- Decode completo do demo aprovado; sem intervalos pretos/silêncio detectados. Som sintético medido em −17,88 LUFS e −7,17 dBTP. Quadros do MP4 inspecionados, incluindo entradas, composição final e transição entre cenas. Reprodução integral e escuta perceptiva não foram verificadas.
+- Kokoro ONNX 0.6.1 com modelo int8 local e voz `pf_dora`, pt-BR: gerou 6,953 s de fala. faster-whisper 1.2.1, modelo `small` em CPU, transcreveu corretamente as duas frases do teste e gerou SRT/JSON com palavras/timestamps. O modelo `tiny` errou parte da segunda frase; ASR continua exigindo revisão. Não foi usado serviço de voz ou transcrição pago.
+- Um agente em contexto separado recebeu uma referência sintética de 2 s e o novo texto “Aprender, um passo de cada vez”. Executou análise, escreveu composição própria, preservou o fundo/áudio e entregou **MP4 de 2,000 s, 320×180, 12 fps, 24 quadros**, com frase legível em duas linhas. Check sem erros/avisos; comparação por cenas e quadro do MP4 inspecionados. Decode aprovado, áudio presente, −18,78 LUFS e −16,23 dBTP.
+- O teste independente encontrou a rejeição de `--fps 12.0` pelo HyperFrames. O wrapper foi corrigido para passar inteiro/fração canônica, e o agente repetiu o render com `canvas.fps=12.0`, sem workaround. A prévia Studio ao vivo falhou neste ambiente; a saída MP4 foi validada. O player local de revisão não depende dessa prévia Studio.
+
+As referências reais do usuário continuavam inacessíveis neste ambiente. Os demos sintéticos validam o fluxo técnico; não provam fidelidade aos vídeos originais, qualidade perceptiva de áudio nem execução dentro do Claude Code/Windows. Os modelos ficam fora do repositório; nenhuma integração ou reconstrução do CRM foi realizada.
+
 ## Versão 0.6.0 — 07/10/2026
 
 Cinco definições de subagentes para Claude Code, coordenação por canal, YouTube Shorts, vídeo longo independente e estudo de referência orientado por evidências.
